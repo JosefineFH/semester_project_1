@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Lemon Milk";
+  src: url("/assets/fonts/LEMONMILK-Bold.otf");
+}
+:root {
+  /* fonts */
+  --lemon-milk-font: "Lemon Milk", sans-serif;
+
+  /* color */
+
+  --dark-blue: #0455bf;
+  --darker-blue: #172a7d;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
