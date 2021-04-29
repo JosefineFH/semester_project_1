@@ -1,0 +1,32 @@
+/* .blue_bubble_1 {
+  background-image: url("/images/background-images/Asset-1.png");
+  background-repeat: no-repeat;
+  background-position-x: -256px;
+  background-position-y: 10px;
+}
+.blue_bubble_2 {
+  background-image: url("/images/background-images/Component2.png");
+  background-repeat: no-repeat;
+  background-position: top calc(237px - 16vw) right calc(128px - 41vw);
+  background-attachment: fixed;
+}
+@media only screen and (max-width: 320px) {
+  .blue_bubble_2 {
+    background-repeat: no-repeat;
+    background-position: top calc(237px - 16vw) right calc(74px - 41vw);
+    background-attachment: fixed;
+  }
+} */
+
+main {
+  background-image: url("/images/background-images/background_image_blue.png");
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 320px) {
+  main {
+    background-position: 0 42px;
+  }
+}
