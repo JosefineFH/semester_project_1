@@ -1,18 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @font-face {
   font-family: "Lemon Milk";
   src: url("/assets/fonts/LEMONMILK-Bold.otf");
+
+  font-family: "Bebas Neue";
+  src: url("/assets/fonts/BebasNeue-Regular.otf");
 }
 :root {
   /* fonts */
   --lemon-milk-font: "Lemon Milk", sans-serif;
+  --bebas-neuce: "Bebas Neue";
+  --montserrat: "Montserrat", sans-serif;
 
   /* color */
 
   --dark-blue: #0455bf;
   --darker-blue: #172a7d;
+  --yellow: #f2b705;
+  --yellow-background-color: #f2b7051f;
 }
 body,
 html {
   padding: 0;
   margin: 0;
+}
+
+/* index.html */
+
+.header {
+  background-color: var(--dark-blue);
+  position: relative;
+  min-height: 40px;
+}
+
+.header_text {
+  font-family: var(--bebas-neuce);
+}
+h1,
+h2 {
+  text-align: center;
+}
+h2 {
+  color: var(--dark-blue);
+  font-size: 9vw;
+  margin: 0;
+  font-family: var(--bebas-neuce);
+}
+
+h1 {
+  color: white;
+  font-size: 10vw;
+  margin: 0;
+  position: absolute;
+  bottom: -14px;
+  left: 15px;
+}
+@media only screen and (max-width: 320px) {
+  h1 {
+    bottom: -11px;
+  }
+}
+section {
+  margin-bottom: 100px;
+}
+/* text section */
+.section_width {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 86%;
+  text-align: center;
+}
+
+.top_content p {
+  font-family: var(--montserrat);
+  color: var(--darker-blue);
+  font-size: 15px;
+  padding: 30px;
+}
+
+.top_content img {
+  width: 100%;
 }
