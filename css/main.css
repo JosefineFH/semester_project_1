@@ -35,7 +35,8 @@ html {
 }
 
 .header_text {
-  font-family: var(--bebas-neuce);
+  font-family: var(--bebas-neuce), "Bebas Neue", sans-serif;
+  /* font-family: var(--bebas-neuce); */
 }
 h1,
 h2 {
@@ -50,7 +51,7 @@ h2 {
 
 h1 {
   color: white;
-  font-size: 10vw;
+  font-size: 40px;
   margin: 0;
   position: absolute;
   bottom: -14px;
