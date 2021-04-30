@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @font-face {
   font-family: "Lemon Milk";
-  src: url("/assets/fonts/LEMONMILK-Bold.otf");
+  src: url("/assets/fonts/LEMONMILK-Bold.otf") format("opentype");
 
   font-family: "Bebas Neue";
   src: url("/assets/fonts/BebasNeue-Regular.otf") format("opentype");
@@ -9,7 +9,7 @@
 :root {
   /* fonts */
   --lemon-milk-font: "Lemon Milk", sans-serif;
-  --bebas-neuce: "Bebas Neue";
+  --bebas-neuce: "Bebas Neue", sans-serif;
   --montserrat: "Montserrat", sans-serif;
 
   /* color */
