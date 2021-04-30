@@ -31,7 +31,7 @@ html {
 .header {
   background-color: var(--dark-blue);
   position: relative;
-  min-height: 29px;
+  min-height: 15px;
 }
 
 .header_text {
