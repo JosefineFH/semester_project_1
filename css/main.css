@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @font-face {
   font-family: "Lemon Milk";
   src: url("/assets/fonts/LEMONMILK-Bold.otf") format("opentype");
 
-  font-family: "Bebas Neue";
-  src: url("/assets/fonts/BebasNeue-Regular.otf") format("opentype");
+  /* font-family: "Bebas Neue";
+  src: url("/assets/fonts/BebasNeue-Regular.otf") format("opentype"); */
 }
 :root {
   /* fonts */
