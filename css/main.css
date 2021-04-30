@@ -32,7 +32,7 @@ html {
 .header_white {
   text-align: center;
 }
-.header p {
+.header h1 {
   margin: 0;
   background-color: var(--dark-blue);
   color: white;
@@ -41,14 +41,13 @@ html {
   letter-spacing: 0em;
   line-height: 1rem;
 }
-.header_white {
+.header_white h1 {
   margin: 0;
   color: var(--dark-blue);
   font-family: "Bebas Neue", sans-serif;
   font-size: 2em;
   letter-spacing: 0em;
-  line-height: 1rem;
-}
+  line-height: 4rem;
 }
 
 section {
