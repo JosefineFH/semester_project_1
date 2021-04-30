@@ -28,7 +28,8 @@ html {
 }
 
 /* index.html */
-.header {
+.header,
+.header_white {
   text-align: center;
 }
 .header p {
@@ -38,10 +39,16 @@ html {
   font-family: "Bebas Neue", sans-serif;
   font-size: 2em;
   letter-spacing: 0em;
-
-  position: absolute;
-  top: 71px;
-  left: 70px;
+  line-height: 1rem;
+}
+.header_white {
+  margin: 0;
+  color: var(--dark-blue);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2em;
+  letter-spacing: 0em;
+  line-height: 1rem;
+}
 }
 
 section {
