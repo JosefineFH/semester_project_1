@@ -69,8 +69,16 @@ section {
 .top_content p {
   font-family: var(--montserrat);
   color: var(--darker-blue);
-  font-size: 15px;
-  padding: 2rem;
+  padding: 0em 2.2rem;
+  margin: 0;
+}
+.top_content img {
+  margin-top: 30px;
+}
+@media only screen and (width: 425px) {
+  .top_content img {
+    margin-top: 30px;
+  }
 }
 
 /* images */
