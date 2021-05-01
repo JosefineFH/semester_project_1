@@ -69,8 +69,7 @@ section {
 .top_content p {
   font-family: var(--montserrat);
   color: var(--darker-blue);
-  padding: 0em 2.2rem;
-  margin: 0;
+  padding: 0 45px;
 }
 .top_content img {
   margin-top: 30px;
