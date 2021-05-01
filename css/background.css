@@ -21,11 +21,11 @@
 main {
   background-image: url("/images/background-images/background_image_blue.png");
   background-repeat: no-repeat;
-  background-position: 0 60px;
-  background-size: cover;
+  background-position: center 15px;
+  background-size: contain;
 }
 @media only screen and (width: 425px) {
   main {
-    background-position: 0 5px;
+    background-position: center 5px;
   }
 }

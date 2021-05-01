@@ -140,25 +140,12 @@ nav li {
 }
 
 /* ----------------------------- exhibition menu ---------------------------- */
-.exhibition {
-  width: 86%;
-  display: grid;
-  margin-left: auto;
-  margin-right: auto;
-  grid-template-columns: 1fr 1fr;
-}
-.exhibition img {
-  width: 100%;
-}
 
 .exhibition_menu {
-  /* border: 1px orangered solid; */
   display: block;
   margin: auto 0;
 }
-.exhibition_menu h2 {
-  font-size: 7vw;
-}
+
 .exhibition_menu img {
   margin: 5px;
   width: 30px;
@@ -172,13 +159,12 @@ nav li {
 .exhibition_menu a {
   display: grid;
   grid-template-columns: 50px 110px;
-  justify-items: left;
   align-items: center;
 
   text-decoration: none;
   font-family: var(--bebas-neuce);
   font-size: 22px;
-  border-left: solid 3px var(--white);
+  border-left: solid 3px #ffffff00;
   margin-right: 10px;
 }
 
