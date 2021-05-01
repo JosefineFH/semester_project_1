@@ -1,9 +1,10 @@
 footer {
   background-color: var(--dark-blue);
   display: grid;
+  padding-bottom: 30px;
 }
 .footer_logo {
-  width: 300px;
+  width: 80%;
   align-self: center;
   justify-self: center;
 }
@@ -18,13 +19,14 @@ footer {
 
 .address {
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 80px 1fr;
   margin: 15px;
 }
 
 .contact_icon {
   align-self: center;
   justify-self: center;
+  padding-right: 10px;
 }
 
 .contact_info p {
