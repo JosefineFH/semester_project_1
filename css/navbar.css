@@ -1,33 +1,36 @@
 header {
   background-color: var(--dark-blue);
-}
-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+.menu-items {
+  display: inline-flex;
+}
+
 .logo_icon {
   height: auto;
   width: 53px;
   height: 48px;
+  margin: 10px;
 }
-.dropdown_icon,
-.logo_icon {
+.dropdown_icon {
   margin: 15px 10px 0px 10px;
 }
-.dropdown {
+nav {
   display: none;
 }
 #hamburger-menu {
   display: none;
 }
-#hamburger-menu:checked ~ .dropdown {
+#hamburger-menu:checked ~ nav {
   display: block;
 }
-#hamburger-menu:checked ~ .dropdown {
+#hamburger-menu:checked ~ nav {
   display: block;
 }
 
-.dropdown {
+nav {
   width: 100%;
   height: 100%;
   display: none;
@@ -35,28 +38,28 @@ nav {
   top: 0;
   z-index: 50;
   right: 0px;
-  background-color: #fffffffa;
+  background-color: var(--white);
   overflow: hidden;
 }
-.dropdown ul {
+nav ul {
   margin-top: 100px;
   list-style-type: none;
   color: var(--darker-blue);
   padding: 0;
 }
-.dropdown a {
+nav a {
   color: var(--darker-blue);
   font-family: var(--lemon-milk-font);
   text-decoration: none;
   font-size: 40px;
 }
-.dropdown a:hover {
+nav a:hover {
   color: var(--yellow);
   border-left: var(--yellow) 3px solid;
   background-color: var(--yellow-background-color);
   padding: 20px;
 }
-.dropdown li {
+nav li {
   text-align: center;
   margin: 30px 0;
 }
@@ -65,8 +68,78 @@ nav {
   position: absolute;
   right: 0%;
 }
+.logo_text {
+  display: none;
+}
+@media only screen and (min-width: 767px) {
+  .header {
+    display: none;
+  }
+  .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* exhibition menu */
+  .logo_text {
+    display: block;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  label {
+    display: none;
+  }
+  nav {
+    display: flex;
+    background-color: transparent;
+    position: relative;
+  }
+  nav li {
+    display: inline;
+    padding: 0px;
+  }
+  nav ul {
+    margin: 0;
+  }
+  nav a {
+    font-size: 1em;
+    padding: 0;
+    letter-spacing: 1px;
+    color: var(--white);
+    /* border-left: var(--white) 3px solid; */
+    padding: 10px;
+  }
+
+  nav a:hover {
+    color: var(--yellow);
+    border-left: var(--yellow) 3px solid;
+    background-color: var(--yellow-background-color);
+    padding: 10px;
+  }
+
+  .nav_links {
+    display: flex;
+    position: relative;
+
+    background-color: transparent;
+  }
+  .nav_links li {
+    display: inline;
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  header {
+    padding: 0 400px;
+  }
+}
+
+/* ----------------------------- exhibition menu ---------------------------- */
 .exhibition {
   width: 86%;
   display: grid;
@@ -105,15 +178,15 @@ nav {
   text-decoration: none;
   font-family: var(--bebas-neuce);
   font-size: 22px;
-  border-left: solid 3px white;
+  border-left: solid 3px var(--white);
   margin-right: 10px;
 }
 
 .cosmology {
-  color: #172a7d;
+  color: var(--darker-blue);
 }
 .cosmology:hover {
-  border-left: solid 3px #172a7d;
+  border-left: solid 3px var(--darker-blue);
   background-color: #172a7d49;
 }
 
@@ -134,10 +207,10 @@ nav {
 }
 
 .ecology {
-  color: #1866cd;
+  color: var(--dark-blue);
 }
 .ecology:hover {
-  border-left: solid 3px #1866cd;
+  border-left: solid 3px var(--dark-blue);
   background-color: #1866cd60;
 }
 
