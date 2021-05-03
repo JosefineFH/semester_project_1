@@ -9,7 +9,7 @@ footer {
   justify-self: center;
 }
 .footer_logo img {
-  width: 80%;
+  max-width: 200px;
 }
 
 .contact_info {
@@ -56,4 +56,36 @@ footer {
 }
 .links ul {
   list-style-type: none;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .footer_logo {
+    order: 1;
+  }
+  .links {
+    order: 2;
+  }
+  .contact_info {
+    order: 1;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer_logo {
+    order: 0;
+  }
+  .links {
+    order: 2;
+  }
+  .contact_info {
+    order: 3;
+  }
 }

@@ -44,11 +44,51 @@ h2 {
   color: var(--dark-blue);
   font-size: 2rem;
   margin: 0;
+  font-size: 8vw;
 }
-.header_text,
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 3vw;
+  }
+}
 .exhibition,
 .special_events {
-  margin-bottom: 50px;
+  margin: 50px 0;
+}
+
+/* images */
+.max_img_size {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .max_img_size {
+    width: 80%;
+  }
+  .section_width {
+    max-width: 1000px;
+  }
+  .senter_content {
+    display: block;
+    margin: 50px auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .max_img_size {
+    width: 80%;
+  }
+  .exhibition img {
+    width: 90%;
+  }
+  .section_width {
+    max-width: 1200px;
+  }
+  .senter_content {
+    display: block;
+    margin: 50px auto;
+    width: 800px;
+  }
 }
 
 /* --------------------------------- header --------------------------------- */
@@ -69,11 +109,7 @@ h2 {
   color: var(--dark-blue);
   line-height: 4rem;
 }
-@media only screen and (width: 768px) {
-  .top_content p {
-    background-color: var(--white-bacground-color);
-  }
-}
+
 @media only screen and (width: 1024px) {
   .header h1 {
     line-height: 3.8rem;
@@ -94,13 +130,12 @@ h2 {
 }
 
 .top_content p {
-  font-family: var(--montserrat);
-  color: var(--darker-blue);
-  padding: 0 50px;
+  background-color: var(--white-bacground-color);
 }
 .top_content img {
   margin-top: 30px;
 }
+
 @media only screen and (width: 425px) {
   .top_content img {
     margin-top: 40px;
@@ -122,11 +157,6 @@ h2 {
   width: 90%;
 }
 
-.exhibition_menu h2,
-.special_events h2 {
-  font-size: 8vw;
-}
-
 /* ----------------------------------- ... ---------------------------------- */
 
 /* ----------------------------- Special Events ----------------------------- */
@@ -145,21 +175,40 @@ h2 {
 .card img {
   width: 100%;
 }
-h3 {
-  font-size: 25px;
+.event_name {
+  font-size: 6vw;
 }
-.card h4,
-h3 {
+
+.card h3,
+p {
   font-family: var(--bebas-neuce);
   margin: 10px 0;
+  padding: 0 20px;
 }
+
 @media screen and (width: 768px) {
-  .card h4,
-  h3 {
+  .card {
     margin: 10px;
+  }
+  .event_name {
+    font-size: 3vw;
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 300px;
+  }
+  .event_name {
+    font-size: 2vw;
+  }
+}
+.card:hover {
+  background-image: linear-gradient(#004aad 60%, #38b6ff);
+  cursor: pointer;
+  color: white;
+  letter-spacing: 3px;
+}
 /* ------------------------------ get involved ------------------------------ */
 .suport_us img {
   width: 70%;
@@ -168,7 +217,8 @@ h3 {
   margin: 0 auto;
   margin-bottom: 10px;
 }
-.suport_us p {
+.suport_us p,
+.top_content p {
   padding-top: 20px;
   font-family: var(--montserrat);
   width: 80%;
@@ -178,19 +228,6 @@ h3 {
   padding: 20px;
 }
 
-/* images */
-.max_img_size {
-  width: 100%;
-}
-
-@media only screen and (min-width: 800px) {
-  .max_img_size {
-    width: 80%;
-  }
-  .section_width {
-    max-width: 800px;
-  }
-}
 @media only screen and (width: 1024) {
   .exhibition {
     grid-template-columns: 400px 400px;
@@ -201,30 +238,11 @@ h3 {
     font-size: 5rem;
     line-height: 3rem;
   }
-  h2 {
-    font-size: 4rem;
-  }
-  p {
-    font-size: 1.5rem;
-  }
-  .top_content,
-  .exhibition,
-  .special_events,
-  .events,
-  .suport_us {
-    width: 800px;
-    display: block;
-    margin: 0 auto;
-  }
   .events {
     display: flex;
   }
   .exhibition {
     display: grid;
     grid-template-columns: 400px 400px;
-  }
-
-  .special_events h2 {
-    font-size: 4vw;
   }
 }
