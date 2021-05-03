@@ -68,13 +68,8 @@ nav li {
   position: absolute;
   right: 0%;
 }
-.logo_text {
-  display: none;
-}
+
 @media only screen and (min-width: 767px) {
-  .header {
-    display: none;
-  }
   .logo {
     text-decoration: none;
     display: flex;
@@ -135,7 +130,7 @@ nav li {
 }
 @media only screen and (min-width: 1440px) {
   header {
-    padding: 0 400px;
+    padding: 0 200px;
   }
 }
 
@@ -143,9 +138,14 @@ nav li {
 
 .exhibition_menu {
   display: block;
-  margin: auto 0;
-}
+  margin: auto 10px;
 
+  background-color: var(--white-bacground-color);
+}
+.exhibition_menu h2 {
+  padding: 0 10px;
+  font-size: 7vw;
+}
 .exhibition_menu img {
   margin: 5px;
   width: 30px;

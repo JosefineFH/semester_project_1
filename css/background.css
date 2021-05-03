@@ -1,31 +1,25 @@
-/* .blue_bubble_1 {
-  background-image: url("/images/background-images/Asset-1.png");
-  background-repeat: no-repeat;
-  background-position-x: -256px;
-  background-position-y: 10px;
-}
-.blue_bubble_2 {
-  background-image: url("/images/background-images/Component2.png");
-  background-repeat: no-repeat;
-  background-position: top calc(237px - 16vw) right calc(128px - 41vw);
-  background-attachment: fixed;
-}
-@media only screen and (max-width: 320px) {
-  .blue_bubble_2 {
-    background-repeat: no-repeat;
-    background-position: top calc(237px - 16vw) right calc(74px - 41vw);
-    background-attachment: fixed;
-  }
-} */
+/* -------------------------- Blue buble background ------------------------- */
 
-main {
-  background-image: url("/images/background-images/background_image_blue.png");
+.blue_bubbles {
+  background-image: url("/images/background-images/blue/mobile_blue_background.jpg");
   background-repeat: no-repeat;
-  background-position: center 15px;
+  background-position: center 20vh;
   background-size: contain;
+  background-attachment: fixed;
+  padding-bottom: 20px;
 }
-@media only screen and (width: 425px) {
-  main {
-    background-position: center 5px;
+
+@media only screen and (width: 768px) {
+  .blue_bubbles {
+    background-image: url("/images/background-images/blue/tablet_blue_background.png");
+    background-position: center 140px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .blue_bubbles {
+    background-image: url("/images/background-images/blue/desktop_blue_background.jpg");
+    background-position: center 20vh;
+  }
+}
+
+/* ------------------------- yellow buble background ------------------------ */

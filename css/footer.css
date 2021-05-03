@@ -39,7 +39,6 @@ footer {
   padding: 10px 0;
 }
 .links a {
-  text-decoration: none;
   color: var(--white);
   font-family: var(--montserrat);
   border-left: var(--dark-blue) 3px solid;
@@ -47,6 +46,7 @@ footer {
   padding: 10px;
 }
 .links a:hover {
+  text-decoration: none;
   color: var(--yellow);
   border-left: var(--yellow) 3px solid;
   background-color: var(--yellow-background-color);
