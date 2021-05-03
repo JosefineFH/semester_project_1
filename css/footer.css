@@ -77,12 +77,15 @@ footer {
 
 @media only screen and (min-width: 1024px) {
   footer {
-    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
   }
   .footer_logo {
     order: 0;
   }
   .links {
+    display: block;
+    margin: auto 10px;
     order: 2;
   }
   .contact_info {

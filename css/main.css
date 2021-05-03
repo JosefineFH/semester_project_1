@@ -47,11 +47,6 @@ h2 {
   font-size: 8vw;
 }
 
-@media only screen and (min-width: 1024px) {
-  h2 {
-    font-size: 3vw;
-  }
-}
 .exhibition,
 .special_events {
   margin: 50px 0;
@@ -75,6 +70,9 @@ h2 {
   }
 }
 @media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 4em;
+  }
   .max_img_size {
     width: 80%;
   }
@@ -87,7 +85,7 @@ h2 {
   .senter_content {
     display: block;
     margin: 50px auto;
-    width: 800px;
+    width: 1000px;
   }
 }
 
@@ -168,7 +166,7 @@ h2 {
   flex-wrap: wrap;
 }
 .card {
-  width: 200px;
+  width: 90%;
   background-color: var(--white-bacground-color);
   margin: 10px;
 }
@@ -176,7 +174,7 @@ h2 {
   width: 100%;
 }
 .event_name {
-  font-size: 6vw;
+  font-size: 2em;
 }
 
 .card h3,
@@ -186,23 +184,25 @@ p {
   padding: 0 20px;
 }
 
-@media screen and (width: 768px) {
+@media screen and (min-width: 768px) {
   .card {
+    width: 300px;
     margin: 10px;
   }
+
   .event_name {
-    font-size: 3vw;
+    font-size: 2em;
   }
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .card {
     width: 300px;
   }
   .event_name {
-    font-size: 2vw;
+    font-size: 3em;
   }
-}
+} */
 .card:hover {
   background-image: linear-gradient(#004aad 60%, #38b6ff);
   cursor: pointer;
@@ -221,7 +221,6 @@ p {
 .top_content p {
   padding-top: 20px;
   font-family: var(--montserrat);
-  width: 80%;
   display: block;
   margin: 0px auto;
   background-color: var(--white-bacground-color);
@@ -243,6 +242,12 @@ p {
   }
   .exhibition {
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 500px 500px;
+  }
+  p {
+    font-size: 30px;
+  }
+  .suport_us img {
+    width: 100%;
   }
 }
