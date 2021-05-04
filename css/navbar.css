@@ -52,8 +52,8 @@ nav ul {
   padding: 0;
 }
 nav a {
+  line-height: 50px;
   color: var(--darker-blue);
-  font-family: var(--lemon-milk-font);
   text-decoration: none;
   font-size: 40px;
 }
@@ -62,7 +62,7 @@ nav a:hover {
   border-left: var(--yellow) 3px solid;
   background-color: var(--yellow-background-color);
 }
-nav li {
+nav li:hover {
   text-align: center;
   margin: 30px 0;
 }
@@ -73,6 +73,9 @@ nav li {
 }
 
 @media only screen and (min-width: 768px) {
+  nav a {
+    font-size: 20px;
+  }
   .logo h3 {
     display: block;
     color: var(--white);
@@ -113,8 +116,6 @@ nav li {
     margin: 0;
   }
   nav a {
-    font-size: 2em;
-
     color: var(--white);
     padding: 13px;
     margin-left: 4px;
@@ -146,7 +147,7 @@ nav li {
 }
 @media only screen and (min-width: 1440px) {
   header {
-    padding: 0 300px;
+    padding: 0 200px;
     height: 130px;
   }
   .logo_icon {
