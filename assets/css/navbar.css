@@ -143,7 +143,7 @@ nav li:hover {
     height: 100px;
   }
   .logo h3 {
-    font-size: 2em;
+    font-size: 25px;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -209,18 +209,18 @@ nav li:hover {
 }
 
 .cosmology {
-  color: var(--darker-blue);
+  color: var(--dark-blue);
   text-transform: uppercase;
 }
-.cosmology:hover {
-  border-left: solid 3px var(--darker-blue);
+a.cosmology:hover {
+  border-left: solid 3px var(--dark-blue);
   background-color: #172a7d49;
 }
 
 .biology {
   color: #21a366;
 }
-.biology:hover {
+a.biology:hover {
   border-left: solid 3px #21a366;
   background-color: #21a3664f;
 }
@@ -228,7 +228,7 @@ nav li:hover {
 .robotics {
   color: #e13f5f;
 }
-.robotics:hover {
+a.robotics:hover {
   border-left: solid 3px #e13f5f;
   background-color: #e13f5f4b;
 }
@@ -236,7 +236,7 @@ nav li:hover {
 .ecology {
   color: #312c38;
 }
-.ecology:hover {
+a.ecology:hover {
   border-left: solid 3px var(--dark-blue);
   background-color: #1866cd60;
 }
@@ -244,7 +244,7 @@ nav li:hover {
 .evolution {
   color: #9231be;
 }
-.evolution:hover {
+a.evolution:hover {
   border-left: solid 3px #9231be;
   background-color: #9131be65;
 }
