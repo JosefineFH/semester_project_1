@@ -13,10 +13,11 @@
   --montserrat: "Montserrat", sans-serif;
 
   /* color */
-  --white: #ffffff;
-  --dark-blue: #004aad;
-  --darker-blue: #172a7d;
-  --yellow: #f2b705;
+  --white: #f7efe7;
+  --dark-purple: #510a32;
+  --darker-blue: #2d3460;
+  --orange: #ee4540;
+  --orange-2: #e13f5f;
   --yellow-background-color: #f2b7051f;
 
   --white-bacground-color: #ffffffb5;
@@ -30,6 +31,8 @@ h1 {
   padding: 0;
   margin: 0;
   font-family: var(--montserrat);
+
+  /* background-color: indianred; */
 }
 h1 {
   font-size: 3em;
@@ -39,9 +42,10 @@ h1,
 h2 {
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
+  text-shadow: 2px 2px #8a3a67;
 }
 h2 {
-  color: var(--dark-blue);
+  color: var(--dark-purple);
   font-size: 2rem;
   margin: 0;
   font-size: 8vw;
@@ -52,6 +56,10 @@ a {
   text-transform: uppercase;
 }
 
+.section_width {
+  padding: 0 20px;
+}
+
 .exhibition,
 .special_events {
   margin: 50px 0;
@@ -60,6 +68,7 @@ a {
 /* images */
 .max_img_size {
   width: 100%;
+  padding: 0 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -103,11 +112,12 @@ a {
 .header h1 {
   color: var(--white);
   padding-top: 10px;
-  background-color: var(--dark-blue);
+  background-color: var(--dark-purple);
   line-height: 1.8rem;
+  text-shadow: 2px 2px #8a3a67;
 }
 .header_white h1 {
-  color: var(--dark-blue);
+  color: var(--dark-purple);
   line-height: 4rem;
 }
 
@@ -122,16 +132,12 @@ a {
 }
 /* ------------------------------ text section ------------------------------ */
 
-.section_width {
+.top_content p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 86%;
+  max-width: 1000px;
   text-align: center;
-}
-
-.top_content p {
-  background-color: var(--white-bacground-color);
 }
 .top_content img {
   margin-top: 30px;
@@ -170,7 +176,8 @@ a {
 }
 .card {
   width: 90%;
-  background-color: var(--white-bacground-color);
+  background-image: linear-gradient(var(--orange) 60%, var(--orange-2));
+  color: var(--white);
   margin: 10px;
 }
 .card img {
@@ -181,7 +188,7 @@ a {
 }
 
 .card h3,
-p {
+.card p {
   font-family: var(--bebas-neuce);
   margin: 10px 0;
   padding: 0 20px;
@@ -200,7 +207,7 @@ p {
 }
 
 .card:hover {
-  background-image: linear-gradient(#004aad 60%, #38b6ff);
+  background-image: linear-gradient(var(--orange) 60%, var(--orange-2));
   cursor: pointer;
   color: white;
   letter-spacing: 3px;
@@ -219,7 +226,6 @@ p {
   font-family: var(--montserrat);
   display: block;
   margin: 0px auto;
-  background-color: var(--white-bacground-color);
   padding: 20px;
 }
 .button {
@@ -228,10 +234,10 @@ p {
 }
 .button a {
   padding: 20px;
-  /* background-color: var(--dark-blue); */
+  /* background-color: var(--dark-purple); */
   border-radius: 50px;
-  background: #004aad;
-  box-shadow: inset 10px 10px 7px #00449f, inset -10px -10px 7px #0050bb;
+  background: #e73c37;
+  box-shadow: inset 10px 10px 7px #c4332f, inset -10px -10px 7px #ff453f;
 
   color: white;
   font-weight: 600;
@@ -239,9 +245,9 @@ p {
   /* border-radius: 10px; */
 }
 .button a:hover {
-  background-color: var(--yellow);
+  background: linear-gradient(145deg, #e68027, #ff982e);
   border-radius: 50px;
-  box-shadow: inset 10px 10px 7px #dfa805, inset -10px -10px 7px #ffc605;
+  box-shadow: inset 10px 10px 7px #d97925, inset -10px -10px 7px #ffa331;
 }
 
 @media only screen and (width: 1024) {
