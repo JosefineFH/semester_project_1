@@ -1,5 +1,5 @@
 header {
-  background-color: var(--dark-purple);
+  background-color: var(--dark-blue);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,7 +80,7 @@ nav li:hover {
     display: block;
     color: var(--white);
     font-size: 5vw;
-    text-shadow: 2px 2px #8a3a67;
+    text-shadow: 2px 2px var(--orange);
   }
   .header h1 {
     display: none;
@@ -96,7 +96,7 @@ nav li:hover {
     display: block;
     font-family: "Bebas Neue", sans-serif;
     font-size: 2em;
-    color: white;
+    color: var(--white);
   }
 }
 
@@ -161,17 +161,6 @@ nav li:hover {
 .exhibition_menu {
   display: block;
   margin: auto 10px;
-
-  background-color: var(--white-bacground-color);
-}
-
-@media screen and (min-width: 1024px) {
-  .exhibition_menu {
-    margin: auto 0px;
-  }
-  .exhibition_menu a {
-    margin-right: 0px;
-  }
 }
 
 .exhibition_menu img {
@@ -185,12 +174,13 @@ nav li:hover {
 }
 .exhibition_menu a {
   display: grid;
-  grid-template-columns: 50px 150px;
+  grid-template-columns: 50px 1fr;
   align-items: center;
 
   text-decoration: none;
   font-family: var(--bebas-neuce);
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 600;
   border-left: solid 3px #ffffff00;
   margin-right: 10px;
 }
@@ -199,8 +189,22 @@ nav li:hover {
     margin: 0 10px;
   }
   .exhibition_menu a {
-    font-size: 2em;
-    grid-template-columns: 50px 300px;
+    grid-template-columns: 50px 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .exhibition_menu {
+    margin: auto 0px;
+  }
+  .exhibition_menu a {
+    grid-template-columns: 100px 1fr;
+    margin-right: 0px;
+    font-size: 30px;
+  }
+  .exhibition_menu img {
+    align-self: center;
+    justify-self: center;
   }
 }
 
@@ -233,7 +237,7 @@ nav li:hover {
   color: #312c38;
 }
 .ecology:hover {
-  border-left: solid 3px var(--dark-purple);
+  border-left: solid 3px var(--dark-blue);
   background-color: #1866cd60;
 }
 

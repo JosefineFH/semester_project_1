@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--dark-purple);
+  background-color: var(--dark-blue);
   display: grid;
   padding-bottom: 30px;
 }
@@ -41,7 +41,7 @@ footer {
 .links a {
   color: var(--white);
   font-family: var(--montserrat);
-  border-left: var(--dark-purple) 3px solid;
+  border-left: var(--dark-blue) 3px solid;
   text-transform: uppercase;
   padding: 10px;
   margin: 20px;
