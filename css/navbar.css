@@ -1,5 +1,5 @@
 header {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-purple);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,8 +58,8 @@ nav a {
   font-size: 40px;
 }
 nav a:hover {
-  color: var(--yellow);
-  border-left: var(--yellow) 3px solid;
+  color: var(--orange);
+  border-left: var(--orange) 3px solid;
   background-color: var(--yellow-background-color);
 }
 nav li:hover {
@@ -74,12 +74,13 @@ nav li:hover {
 
 @media only screen and (min-width: 768px) {
   nav a {
-    font-size: 20px;
+    font-size: 15px;
   }
   .logo h3 {
     display: block;
     color: var(--white);
     font-size: 5vw;
+    text-shadow: 2px 2px #8a3a67;
   }
   .header h1 {
     display: none;
@@ -117,14 +118,14 @@ nav li:hover {
   }
   nav a {
     color: var(--white);
-    padding: 13px;
-    margin-left: 4px;
+    padding: 10px;
+    font-size: 20px;
   }
 
   nav a:hover {
-    color: var(--yellow);
-    border-left: var(--yellow) 4px solid;
-    background-color: var(--yellow-background-color);
+    color: #f7efe7;
+    border-left: #f7efe7 4px solid;
+    background-color: #f7efe777;
     margin-left: 0px;
   }
 
@@ -205,6 +206,7 @@ nav li:hover {
 
 .cosmology {
   color: var(--darker-blue);
+  text-transform: uppercase;
 }
 .cosmology:hover {
   border-left: solid 3px var(--darker-blue);
@@ -228,10 +230,10 @@ nav li:hover {
 }
 
 .ecology {
-  color: var(--dark-blue);
+  color: #312c38;
 }
 .ecology:hover {
-  border-left: solid 3px var(--dark-blue);
+  border-left: solid 3px var(--dark-purple);
   background-color: #1866cd60;
 }
 

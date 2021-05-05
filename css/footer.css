@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-purple);
   display: grid;
   padding-bottom: 30px;
 }
@@ -41,18 +41,19 @@ footer {
 .links a {
   color: var(--white);
   font-family: var(--montserrat);
-  border-left: var(--dark-blue) 3px solid;
+  border-left: var(--dark-purple) 3px solid;
   text-transform: uppercase;
   padding: 10px;
+  margin: 20px;
 }
 .links a:hover {
   text-decoration: none;
-  color: var(--yellow);
-  border-left: var(--yellow) 3px solid;
-  background-color: var(--yellow-background-color);
+  color: var(--white);
+  border-left: var(--white) 3px solid;
+  background-color: #f7efe777;
 }
 .links li {
-  margin: 10px 0;
+  margin: 10px;
 }
 .links ul {
   list-style-type: none;
