@@ -1,0 +1,81 @@
+.tabs {
+  margin-top: 30px;
+  position: relative;
+  clear: both;
+  height: 600vw;
+}
+
+.tab label {
+  background: #eee;
+  padding: 10px;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+  text-transform: uppercase;
+  border-left: solid 1px #fff;
+  font-size: 15px;
+}
+.tab label:hover {
+  background: #b7a5d1;
+}
+
+.tab [type="radio"] {
+  display: none;
+}
+
+.content {
+  position: relative;
+  /* height: 200px; */
+}
+.content h2 {
+  text-shadow: 2px 2px #8a3a67;
+}
+.content p {
+  margin: 30px;
+}
+
+[type="radio"]:checked ~ label {
+  background: #fff;
+  z-index: 2;
+}
+
+[type="radio"]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+[type="radio"] ~ label {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  [type="radio"] ~ label {
+    display: block;
+  }
+
+  .content {
+    position: absolute;
+
+    /* top: 0px; */
+    /* left: 0; */
+    background: #fff;
+    right: 0;
+    /* bottom: 0; */
+    padding: 20px;
+    height: 90%;
+  }
+
+  .tab {
+    float: left;
+  }
+  .tabs {
+    position: relative;
+    clear: both;
+    height: 80vw;
+  }
+  main {
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    /* border: 1px solid #ccc; */
+  }
+}
