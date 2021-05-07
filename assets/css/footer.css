@@ -1,7 +1,10 @@
 footer {
-  background-color: var(--dark-blue);
+  background-color: var(--peter-river);
   display: grid;
   padding-bottom: 30px;
+}
+.bolder {
+  font-weight: bolder;
 }
 .footer_logo {
   width: 80%;
@@ -41,10 +44,11 @@ footer {
 .links a {
   color: var(--white);
   font-family: var(--montserrat);
-  border-left: var(--dark-blue) 3px solid;
+  border-left: var(--peter-river) 3px solid;
   text-transform: uppercase;
   padding: 10px;
   margin: 20px;
+  font-weight: bolder;
 }
 .links a:hover {
   text-decoration: none;
@@ -70,6 +74,17 @@ footer {
   }
   .links {
     order: 2;
+    grid-column: 1 / 4;
+    margin: 0;
+
+    display: inline-grid;
+    justify-items: center;
+    align-items: center;
+
+    text-align: center;
+  }
+  .links ul {
+    padding: 0;
   }
   .contact_info {
     order: 1;

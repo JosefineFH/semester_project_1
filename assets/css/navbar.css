@@ -1,11 +1,11 @@
 header {
-  background-color: var(--dark-blue);
+  background-color: var(--peter-river);
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .menu-items {
   display: inline-flex;
+  align-items: center;
 }
 
 .logo_icon {
@@ -14,12 +14,9 @@ header {
   height: 48px;
   margin: 10px;
 }
-.logo h3 {
-  display: none;
-  font-family: var(--bebas-neuce);
-}
+
 .dropdown_icon {
-  margin: 15px 10px 0px 10px;
+  margin: 15px 30px 0px 10px;
 }
 nav {
   display: none;
@@ -46,18 +43,20 @@ nav {
   overflow: hidden;
 }
 nav ul {
-  margin-top: 100px;
+  display: block;
+  margin: 200px 0;
   list-style-type: none;
-  color: var(--darker-blue);
-  padding: 0;
+  text-align: center;
+}
+nav li {
+  margin: 30px 0;
 }
 nav a {
-  line-height: 50px;
-  color: var(--darker-blue);
+  color: var(--dark-blue);
   text-decoration: none;
   font-size: 40px;
 }
-nav a:hover {
+/* nav a:hover {
   color: var(--orange);
   border-left: var(--orange) 3px solid;
   background-color: var(--yellow-background-color);
@@ -65,25 +64,143 @@ nav a:hover {
 nav li:hover {
   text-align: center;
   margin: 30px 0;
-}
+} */
 
 .right {
   position: absolute;
   right: 0%;
 }
 
+/* --------------------------- Exhibition section --------------------------- */
+
+.exhibitions {
+  margin-top: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-gap: 10px; */
+  justify-content: center;
+  justify-items: center;
+}
+.container {
+  cursor: pointer;
+  display: block;
+  /* border: red 1px solid; */
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  width: 150px;
+  height: 150px;
+
+  position: relative;
+  box-shadow: #00000059 0px 3px 6px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+}
+.container img {
+  width: 30px;
+}
+.container a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  padding: 10px;
+
+  font-family: var(--Apex-bold);
+  font-weight: 900;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(255, 255, 255, 0.534);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.our_exhibitions a {
+  color: var(--tomatos);
+}
+.our_exhibitions:hover {
+  background-image: url("/images/building-images/hammerdalen-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cosmology a {
+  color: #172a7d;
+}
+
+.cosmology:hover {
+  background-image: url("/images/events/cosmology.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.biology a {
+  color: #21a366;
+}
+.biology:hover {
+  background-image: url("/images/events/biology.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.robotics a {
+  color: #e13f5f;
+}
+.robotics:hover {
+  background-image: url("/images/events/robotics.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.ecology a {
+  color: #0455bf;
+}
+.ecology:hover {
+  background-image: url("/images/events/ecology.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.evolution a {
+  color: #9231be;
+}
+.evolution:hover {
+  background-image: url("/images/events/evolution.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
 @media only screen and (min-width: 768px) {
   nav a {
-    font-size: 15px;
-  }
-  .logo h3 {
-    display: block;
-    color: var(--white);
-    font-size: 5vw;
-    text-shadow: 2px 2px var(--orange);
-  }
-  .header h1 {
-    display: none;
+    font-size: 40px;
   }
   .logo {
     text-decoration: none;
@@ -98,6 +215,16 @@ nav li:hover {
     font-size: 2em;
     color: var(--white);
   }
+  .exhibitions {
+    grid-gap: 20px;
+  }
+  .container {
+    width: 200px;
+    height: 200px;
+  }
+  .container a {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -107,6 +234,8 @@ nav li:hover {
   nav {
     display: flex;
     background-color: transparent;
+    align-items: center;
+
     position: relative;
   }
   nav li {
@@ -119,13 +248,14 @@ nav li:hover {
   nav a {
     color: var(--white);
     padding: 10px;
-    font-size: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
   }
 
   nav a:hover {
-    color: #f7efe7;
-    border-left: #f7efe7 4px solid;
-    background-color: #f7efe777;
+    /* color: var(--sun-flower); */
+    border-left: var(--sunflower) 4px solid;
+    background-color: var(--sunflower-light);
     margin-left: 0px;
   }
 
@@ -143,108 +273,21 @@ nav li:hover {
     height: 100px;
   }
   .logo h3 {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
+
 @media only screen and (min-width: 1440px) {
   header {
-    padding: 0 200px;
+    padding: 0 10%;
     height: 130px;
   }
   .logo_icon {
     height: auto;
     width: 90px;
   }
-}
-/* ----------------------------- exhibition menu ---------------------------- */
-
-.exhibition_menu {
-  display: block;
-  margin: auto 10px;
-}
-
-.exhibition_menu img {
-  margin: 5px;
-  width: 35px;
-}
-.exhibition_menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.exhibition_menu a {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  align-items: center;
-
-  text-decoration: none;
-  font-family: var(--bebas-neuce);
-  font-size: 20px;
-  font-weight: 600;
-  border-left: solid 3px #ffffff00;
-  margin-right: 10px;
-}
-@media screen and (min-width: 768px) {
-  .exhibition_menu ul {
-    margin: 0 10px;
+  .exhibitions {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
   }
-  .exhibition_menu a {
-    grid-template-columns: 50px 1fr;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .exhibition_menu {
-    margin: auto 0px;
-  }
-  .exhibition_menu a {
-    grid-template-columns: 100px 1fr;
-    margin-right: 0px;
-    font-size: 30px;
-  }
-  .exhibition_menu img {
-    align-self: center;
-    justify-self: center;
-  }
-}
-
-.cosmology {
-  color: var(--dark-blue);
-  text-transform: uppercase;
-}
-a.cosmology:hover {
-  border-left: solid 3px var(--dark-blue);
-  background-color: #172a7d49;
-}
-
-.biology {
-  color: #21a366;
-}
-a.biology:hover {
-  border-left: solid 3px #21a366;
-  background-color: #21a3664f;
-}
-
-.robotics {
-  color: #e13f5f;
-}
-a.robotics:hover {
-  border-left: solid 3px #e13f5f;
-  background-color: #e13f5f4b;
-}
-
-.ecology {
-  color: #312c38;
-}
-a.ecology:hover {
-  border-left: solid 3px var(--dark-blue);
-  background-color: #1866cd60;
-}
-
-.evolution {
-  color: #9231be;
-}
-a.evolution:hover {
-  border-left: solid 3px #9231be;
-  background-color: #9131be65;
 }

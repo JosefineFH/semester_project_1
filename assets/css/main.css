@@ -21,8 +21,15 @@
 
   /* color */
   --white: #f2f2f0;
-  --dark-blue: #131026;
-  --light-blue: #1a1440;
+  --white-ish: #f7efe7;
+  --sunflower: #f1c40f;
+  --sunflower-light: #f1c40f5b;
+  --midnight-blue: #2c3e50;
+  --peter-river: #3498db;
+  --wisteria: #8e44ad;
+  --tomatos: #ee4540;
+
+  --dark-blue: #172a7d;
 
   --light-pink: #bfa8b1;
 
@@ -36,29 +43,22 @@
 body,
 html,
 h1 {
-  background-color: #f2f2f0;
-  font: #f2f2f0;
   padding: 0;
   margin: 0;
-  /* font-family: var(--montserrat); */
-
-  /* background-color: indianred; */
 }
+
 h1 {
   font-size: 2em;
 }
 
 h1,
 h2 {
-  background: -webkit-linear-gradient(var(--dark-blue), #503ec0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-family: var(--Apex-bold);
   text-align: center;
   text-transform: uppercase;
 }
 h2 {
-  color: var(--dark-blue);
+  color: var(--tomatos);
   font-size: 1.8rem;
   margin: 0;
 }
@@ -68,123 +68,54 @@ p {
 }
 
 a {
-  font-family: var(--lemon-milk-font);
+  font-family: var(--bebas-neuce);
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-.section_width {
-  padding: 0 20px;
+.top_content {
+  padding: 0 30px;
 }
 
-.exhibition,
-.special_events {
-  margin: 50px 0;
+.senter_content {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/* images */
-.max_img_size {
-  width: 100%;
-  padding: 0 20px;
-}
+/* ----------------------------- Header Section ----------------------------- */
 
-@media only screen and (min-width: 768px) {
-  .max_img_size {
-    width: 80%;
-  }
-  .section_width {
-    max-width: 1000px;
-  }
-  .senter_content {
-    display: block;
-    margin: 50px auto;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  h2 {
-    font-size: 4em;
-  }
-  .max_img_size {
-    width: 80%;
-  }
-  .exhibition img {
-    width: 90%;
-  }
-  .section_width {
-    max-width: 1200px;
-  }
-  .senter_content {
-    width: 1000px;
-  }
-}
-
-/* --------------------------------- header --------------------------------- */
-
-.header,
-.header_white {
-  text-align: center;
-  letter-spacing: 0em;
+.header {
+  background-color: var(--peter-river);
 }
 
 .header h1 {
+  background-color: var(--peter-river);
+  font-size: 2rem;
   color: var(--white);
-  padding-top: 10px;
-  background-color: var(--dark-blue);
-  line-height: 1.8rem;
-  text-shadow: 2px 2px var(--light-pink);
-}
-.header_white h1 {
-  color: var(--dark-blue);
-  line-height: 4rem;
+
+  line-height: 20px;
 }
 
-@media only screen and (width: 1024px) {
-  .header h1 {
-    line-height: 3.8rem;
-    font-size: 6em;
-  }
-  .header_white h2 {
-    font-size: 4rem;
-  }
-}
-/* ------------------------------ text section ------------------------------ */
+/* ------------------------------ Text section ------------------------------ */
 
-.top_content p {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px;
+.top_content p,
+.suport_us p {
+  padding: 10px 30px;
+  font-size: var(--lemon-milk-font);
+  font-weight: bold;
+  font-size: 15px;
   text-align: center;
+  line-height: 20px;
+  color: var(--dark-blue);
 }
-.top_content img {
-  margin-top: 30px;
-}
-
-@media only screen and (width: 425px) {
-  .top_content img {
-    margin-top: 40px;
-  }
-}
-
-/* --------------------------- Exhibition section --------------------------- */
-
-.exhibition {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.exhibition_img {
-  align-self: center;
-  justify-self: center;
-}
-.exhibition img {
-  width: 90%;
-}
-
-/* ----------------------------------- ... ---------------------------------- */
 
 /* ----------------------------- Special Events ----------------------------- */
-
+.special_events {
+  margin-top: 100px;
+}
 .events {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -202,10 +133,6 @@ a {
 .event_name {
   font-size: 1.5em;
 }
-/* .card h3 {
-  font-size: 10px;
-} */
-
 .card h4,
 .card p {
   font-family: var(--bebas-neuce);
@@ -230,6 +157,10 @@ a {
   cursor: pointer;
 }
 /* ------------------------------ get involved ------------------------------ */
+.suport_us {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .suport_us img {
   width: 70%;
 
@@ -237,28 +168,23 @@ a {
   margin: 0 auto;
   margin-bottom: 10px;
 }
-.suport_us p,
-.top_content p {
-  padding-top: 20px;
-  font-family: var(--montserrat);
-  display: block;
-  margin: 0px auto;
-  padding: 20px;
+.suport_us p {
+  text-align: start;
 }
+
 .button {
   margin: 30px 0;
   text-align: center;
 }
 .button a {
-  padding: 20px;
+  padding: 15px 50px;
   border-radius: 50px;
   background: #e73c37;
-  box-shadow: inset 10px 10px 7px #c4332f, inset -10px -10px 7px #ff453f;
+  box-shadow: #00000080 0px 3px 6px;
 
   color: var(--white);
   font-weight: 600;
   text-decoration: none;
-  /* border-radius: 10px; */
 }
 .button a:hover {
   background: linear-gradient(145deg, #e68027, #ff982e);
@@ -266,11 +192,6 @@ a {
   box-shadow: inset 10px 10px 7px #d97925, inset -10px -10px 7px #ffa331;
 }
 
-@media only screen and (width: 1024) {
-  .exhibition {
-    grid-template-columns: 400px 400px;
-  }
-}
 @media only screen and (min-width: 1440px) {
   .header h1 {
     font-size: 5rem;
@@ -279,14 +200,81 @@ a {
   .events {
     display: flex;
   }
-  .exhibition {
-    display: grid;
-    grid-template-columns: 500px 500px;
-  }
+
   p {
     font-size: 30px;
   }
   .suport_us img {
     width: 100%;
   }
+}
+
+/* --------------------------------- Tablet --------------------------------- */
+/* size of 768px */
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 45pt;
+  }
+
+  .top_content img {
+    width: 600px;
+  }
+  /* .section_width {
+    max-width: 1000px;
+  } */
+  /* Text content */
+  .top_content p,
+  .suport_us p {
+    font-size: 25px;
+    max-width: 800px;
+    text-align: center;
+    line-height: 25px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .senter_content {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .button a {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 4em;
+  }
+  .max_img_size {
+    width: 80%;
+  }
+
+  .section_width {
+    max-width: 1200px;
+  }
+
+  .header h1 {
+    line-height: 45px;
+    font-size: 80px;
+  }
+  .header_white h2 {
+    margin-top: 20px;
+    font-size: 60px;
+  }
+
+  .suport_us p {
+    font-size: 25px;
+    width: 800px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .suport_us img {
+    width: 1000px;
+  }
+  /* .top_content p,
+  .suport_us p {
+    width: 800px;
+  } */
 }
