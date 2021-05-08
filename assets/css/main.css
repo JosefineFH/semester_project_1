@@ -25,7 +25,7 @@
   --sunflower: #f1c40f;
   --sunflower-light: #f1c40f5b;
   --midnight-blue: #2c3e50;
-  --peter-river: #3498db;
+  --river: #3498db;
   --wisteria: #8e44ad;
   --tomatos: #ee4540;
 
@@ -86,14 +86,13 @@ a {
 /* ----------------------------- Header Section ----------------------------- */
 
 .header {
-  background-color: var(--peter-river);
+  background-color: var(--river);
 }
 
 .header h1 {
-  background-color: var(--peter-river);
+  /* background-color: var(--river); */
   font-size: 2rem;
   color: var(--white);
-
   line-height: 20px;
 }
 

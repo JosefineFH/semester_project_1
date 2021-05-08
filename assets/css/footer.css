@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--peter-river);
+  background-color: var(--river);
   display: grid;
   padding-bottom: 30px;
 }
@@ -44,7 +44,7 @@ footer {
 .links a {
   color: var(--white);
   font-family: var(--montserrat);
-  border-left: var(--peter-river) 3px solid;
+  border-left: var(--river) 3px solid;
   text-transform: uppercase;
   padding: 10px;
   margin: 20px;

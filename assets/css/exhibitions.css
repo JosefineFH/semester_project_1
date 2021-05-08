@@ -30,7 +30,11 @@
 .content {
   position: relative;
 }
-
+.content img {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+}
 .content p {
   margin: 30px;
 }
@@ -57,12 +61,8 @@
   .content {
     position: absolute;
 
-    /* top: 0px; */
-    /* left: 0; */
-    background: var(--white);
+    background: #fff;
     right: 0;
-    /* bottom: 0; */
-    padding: 20px;
     height: 90%;
   }
 
@@ -73,36 +73,49 @@
     position: relative;
     clear: both;
     height: 80vw;
-  }
-  main {
     display: block;
     margin: 0 auto;
     width: 1000px;
-    /* border: 1px solid #ccc; */
   }
 }
+.move_down_text {
+  position: relative;
+  top: 10px;
+  max-width: 1000px;
+  margin: 0;
+  /* border: greenyellow 3px solid; */
+  height: 200px;
+}
+.content > div {
+  background-color: greenyellow;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.exhibition {
+  background-image: url("/assets/svg/exhibition_background.svg");
+}
+.cosmology_exhibition {
+  color: var(--midnight-blue);
+  background-image: url("/assets/svg/exhibition_background.svg");
+}
+.biology_exhibition {
+  background-image: url("/assets/svg/exhibition_background.svg");
 
-.cosmology ~ h2 {
-  color: var(--darker-blue);
-  text-transform: uppercase;
+  /* background: -webkit-linear-gradient(#21a366, #3f51b5); */
 }
-h2.biology {
-  background: -webkit-linear-gradient(#21a366, #3f51b5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.robotics_exhibition {
+  background-image: url("/assets/svg/exhibition_background.svg");
+
+  /* background: -webkit-linear-gradient(#e13f5f, #9c27b0); */
 }
-h2.robotics {
-  background: -webkit-linear-gradient(#e13f5f, #9c27b0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.ecology_exhibition {
+  background-image: url("/assets/svg/exhibition_background.svg");
+
+  /* background: -webkit-linear-gradient(#312c38, #3f51b5); */
 }
-h2.ecology {
-  background: -webkit-linear-gradient(#312c38, #3f51b5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-h2.evolution {
-  background: -webkit-linear-gradient(#9231be, #3f51b5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.evolution_exhibition {
+  background-image: url("/assets/svg/exhibition_background.svg");
+
+  /* background: -webkit-linear-gradient(#9231be, #3f51b5); */
 }
