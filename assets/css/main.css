@@ -84,9 +84,24 @@ a {
 }
 
 /* ----------------------------- Header Section ----------------------------- */
-
 .header {
   background-color: var(--river);
+}
+.background_header {
+  /* set image for background   */
+  background-image: url("/images/IMG_3364.jpg");
+
+  /*  full height image  */
+  height: 70vh;
+
+  /*  image starting position- eg. top, right, left, bottom  */
+  background-position: center;
+
+  /*  size of image, eg- 50%, 3rem, 500px etc.
+       cover= scales the image as large as possible without stretching
+     */
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header h1 {
@@ -259,7 +274,7 @@ a {
     font-size: 80px;
   }
   .header_white h2 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 60px;
   }
 
