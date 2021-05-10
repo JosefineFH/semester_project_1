@@ -86,11 +86,7 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-@supports (-webkit-overflow-scrolling: touch) {
-  .background_header {
-    background-attachment: scroll;
-  }
-}
+
 /* ------------------------------ Text section ------------------------------ */
 
 .top_content p,
