@@ -16,53 +16,9 @@
     <link rel="stylesheet" href="/assets/css/footer.css">
     <title>The Science Museum | Welcome to Science</title>
 </head>
-<style>
-    body,
-    html {
-        margin: 0;
-        padding: 0;
-    }
-
-    .wrapper {
-        height: 100vh;
-        overflow-x: hidden;
-        overflow-y: auto;
-        perspective: 1px;
-    }
-
-    .section {
-        position: relative;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 48px;
-        color: white;
-    }
-
-    .parallax::after {
-        content: " ";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transform: translateZ(-1px) scale(2);
-        background-size: 100%;
-        z-index: -1;
-        background-image: url('http://placeimg.com/640/480/any');
-    }
-
-    .content {
-        height: 200vh;
-        display: flex;
-        justify-content: center;
-        background: red;
-    }
-</style>
 
 <body>
-    <!-- <header>
+    <header>
         <div class="header">
             <a href="/" class="logo">
                 <img class="logo_icon" src="/images/icons/atom.png" alt="Logo">
@@ -91,25 +47,17 @@
         <section>
             <h1 class="header_text"> the Science Museum</h1>
         </section>
-    </header> -->
+    </header>
 
     <main>
-        <div class="wrapper">
-            <div class="section parallax">
-                <h1>Heading</h1>
-            </div>
-            <div class="content">
-                <h1>Site Content</h1>
-            </div>
-        </div>
 
-        <!-- <section class="background_header">
+        <section class="background_header">
             <div>
                 <h2>explore together</h2>
             </div>
-        </section> -->
+        </section>
 
-        <!--  <section class="info_section">
+        <section class="info_section">
             <div class="top_content senter_content">
                 <div>
                     <p>Come join us at the Community Science Museum where we’re committed to making science
@@ -231,9 +179,9 @@
             <div class="button">
                 <a href="/get_involved.html">Get Involved with us</a>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer>
+    <footer>
         <section class="footer_logo">
             <img lass="footer_logo" src="/images/science_museum_whitepng.png" alt="">
         </section>
@@ -269,6 +217,6 @@
                 </div>
             </div>
         </section>
-    </footer> -->
+    </footer>
 
 </html>
