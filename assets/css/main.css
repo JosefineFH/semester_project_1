@@ -80,15 +80,17 @@ a {
 
 .background_header {
   background-image: url("/images/IMG_3364.jpg");
-  height: 10vh;
+  height: 8pc;
   /* background-position-y: 30px; */
-  /* background-position: bottom; */
-
-  background-size: cover;
-  /* background-repeat: no-repeat; */
+  background-size: contain;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
+@supports (-webkit-overflow-scrolling: touch) {
+  .background_header {
+    background-attachment: scroll;
+  }
+}
 /* ------------------------------ Text section ------------------------------ */
 
 .top_content p,

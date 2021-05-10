@@ -6,7 +6,6 @@
 .header_text {
   background-color: var(--river);
   color: var(--white);
-  line-height: 14px;
   margin: 0;
   font-size: 1.6em;
 }
