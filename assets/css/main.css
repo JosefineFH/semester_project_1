@@ -79,19 +79,13 @@ a {
 /* ----------------------------- Header Section ----------------------------- */
 
 .background_header {
-  background-image: url(/images/IMG_3364.jpg);
-  /*  full height image  */
-  height: 100vh;
+  background-image: url("/images/IMG_3364.jpg");
+  height: 10vh;
+  /* background-position-y: 30px; */
+  /* background-position: bottom; */
 
-  /*  image starting position- eg. top, right, left, bottom  */
-  background-position: center;
-
-  /*  size of image, eg- 50%, 3rem, 500px etc.
-    cover= scales the image as large as possible without stretching
-  */
   background-size: cover;
-
-  /*  To get the desired effect, the key part is to set this background image to be fixed  */
+  /* background-repeat: no-repeat; */
   background-attachment: fixed;
 }
 
