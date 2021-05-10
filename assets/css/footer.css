@@ -7,8 +7,6 @@ footer {
   font-weight: bolder;
 }
 .footer_logo {
-  width: 80%;
-  align-self: center;
   justify-self: center;
 }
 .footer_logo img {
@@ -18,12 +16,13 @@ footer {
 .contact_info {
   display: grid;
   padding-top: 20px;
+  justify-items: center;
 }
 
 .address {
   display: grid;
   grid-template-columns: 80px 1fr;
-  margin: 15px;
+  /* margin: 15px; */
 }
 
 .contact_icon {
@@ -31,24 +30,22 @@ footer {
   justify-self: center;
   padding-right: 10px;
 }
+.contact_icon img{
+  width: 50px;
+}
 
 .contact_info p {
   color: var(--white);
   font-family: var(--montserrat);
   margin: 0;
+  padding: 0;
   font-size: 15px;
 }
-.links {
-  padding: 10px 0;
-}
+
 .links a {
   color: var(--white);
-  font-family: var(--montserrat);
   border-left: var(--river) 3px solid;
-  text-transform: uppercase;
-  padding: 10px;
-  margin: 20px;
-  font-weight: bolder;
+  letter-spacing: 2px;
 }
 .links a:hover {
   text-decoration: none;
@@ -56,11 +53,12 @@ footer {
   border-left: var(--white) 3px solid;
   background-color: #f7efe777;
 }
-.links li {
-  margin: 10px;
-}
+
 .links ul {
   list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -71,11 +69,12 @@ footer {
   }
   .footer_logo {
     order: 1;
+    align-self: center;
   }
   .links {
-    order: 2;
+    order: 0;
     grid-column: 1 / 4;
-    margin: 0;
+    margin: 30px 0;
 
     display: inline-grid;
     justify-items: center;
@@ -85,16 +84,27 @@ footer {
   }
   .links ul {
     padding: 0;
+    display: inline-flex;
+  }
+  .links a {
+    padding: 0 20px;
+    font-size: 25px;
   }
   .contact_info {
     order: 1;
   }
+  .contact_info {
+
+    justify-items: unset;
+}
 }
 
 @media only screen and (min-width: 1024px) {
   footer {
     justify-content: center;
     grid-template-columns: 300px 300px 300px;
+    margin-top: 4pc;
+
   }
   .footer_logo {
     order: 0;
@@ -102,9 +112,13 @@ footer {
   .links {
     display: block;
     margin: auto 10px;
-    order: 2;
+    grid-column: 2;
+    padding-top: 30px;
   }
-  .contact_info {
-    order: 3;
+  .links ul {
+    display: block;
   }
+  .contact_info p {
+    font-size: 18px;
+}
 }

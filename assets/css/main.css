@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
 @font-face {
   font-family: "Lemon Milk";
   src: url("/assets/fonts/LEMONMILK-Bold.otf") format("opentype");
 
-  font-family: "Bebas Neue";
-  src: url("/assets/fonts/BebasNeue-Regular.otf") format("opentype");
+  /* font-family: "Bebas Neue";
+  src: url("/assets/fonts/BebasNeue-Regular.otf") format("opentype"); */
 
   font-family: "Apex 2";
   src: url("/assets/fonts/ApexMk2-Regular.otf") format("opentype");
@@ -62,10 +62,11 @@ h2 {
 p {
   font-family: var(--montserrat);
   padding: 5%;
+  margin: 0;
 }
 
 a {
-  font-family: var(--bebas-neuce);
+  font-family: var(--bebas-neuce), "Bebas Neue", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -79,20 +80,17 @@ a {
 /* ----------------------------- Header Section ----------------------------- */
 
 .background_header {
-  background-image: url("/images/IMG_3364.jpg");
-  /* height: 8pc;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pd44-069-ae-2a.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=409cd63b190b8e8c253970a92bd672ff");
+  height: 11pc;
   background-size: cover;
-  height: 10pc;
-  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 @supports (-webkit-touch-callout: inherit) {
   .background_header {
     background-position: center;
     background-size: cover;
-    height: 10pc;
+    height: 15pc;
     background-attachment: scroll;
   }
 }
@@ -101,7 +99,6 @@ a {
 
 .top_content p,
 .suport_us p {
-  font-size: var(--lemon-milk-font);
   font-size: 15px;
   text-align: center;
   color: var(--dark-blue);
@@ -119,8 +116,9 @@ a {
   flex-wrap: wrap;
 }
 .card {
-  width: 90%;
-  background-image: linear-gradient(var(--dark-blue) 70%, #2b2269);
+  width: 80%;
+  background-image: linear-gradient(var(--dark-blue) 70%, var(--river));
+  /* background-color: var(--tomatos); */
   color: var(--white);
   margin: 10px;
 }
@@ -132,7 +130,7 @@ a {
 }
 .card h4,
 .card p {
-  font-family: var(--bebas-neuce);
+  font-family: var(--bebas-neuce), "Bebas Neue", sans-serif;
   text-transform: uppercase;
   margin: 10px 0;
   padding: 0 20px;
@@ -140,6 +138,8 @@ a {
 
 .card:hover {
   cursor: pointer;
+  background-image: linear-gradient(145deg, #e68027 50%, var(--orange));
+
 }
 /* ------------------------------ get involved ------------------------------ */
 
@@ -171,22 +171,7 @@ a {
   box-shadow: inset 10px 10px 7px #d97925, inset -10px -10px 7px #ffa331;
 }
 
-@media only screen and (min-width: 1440px) {
-  .header h1 {
-    font-size: 5rem;
-    line-height: 3rem;
-  }
-  .events {
-    display: flex;
-  }
 
-  p {
-    font-size: 30px;
-  }
-  .suport_us img {
-    width: 100%;
-  }
-}
 
 /* --------------------------------- Tablet --------------------------------- */
 /* size of 768px */
@@ -203,7 +188,7 @@ a {
   .top_content p,
   .suport_us p {
     font-size: 25px;
-    max-width: 800px;
+    max-width: 1200px;
     text-align: center;
     line-height: 25px;
     display: block;
@@ -230,37 +215,39 @@ a {
 }
 
 @media only screen and (min-width: 1024px) {
-  h2 {
-    font-size: 4em;
-  }
-  .max_img_size {
-    width: 80%;
-  }
-
-  .section_width {
-    max-width: 1200px;
-  }
-
-  .header h1 {
-    line-height: 45px;
-    font-size: 80px;
-  }
-  .header_white h2 {
-    /* margin-top: 20px; */
-    font-size: 60px;
-  }
-
-  .suport_us p {
-    font-size: 25px;
-    width: 800px;
-  }
+  .header_text {
+    font-size: 5em;
+    line-height: unset;
 }
+
+p {
+  padding: 30px 0;
+}
+.background_header {
+  height: 25pc;
+}
+
+}
+
 @media only screen and (min-width: 1440px) {
-  .suport_us img {
-    width: 1000px;
+  .header h1 {
+    font-size: 5rem;
+    line-height: 3rem;
   }
-  /* .top_content p,
-  .suport_us p {
-    width: 800px;
-  } */
+  .events {
+    display: flex;
+  }
+
+  p {
+    font-size: 30px;
+  }
+  .suport_us img {
+    width: 1200px;
+  }
+  .button a {
+    font-size: 35px;
+}
+.background_header {
+  height: 40pc;
+}
 }
