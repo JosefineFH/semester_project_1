@@ -80,14 +80,17 @@ a {
 
 .background_header {
   background-image: url("/images/IMG_3364.jpg");
-  /* height: 8pc; */
-  /* background-position-y: 30px; */
-  /* background-size: contain;
-  background-repeat: no-repeat; */
-  /* background-attachment: fixed; */
+  /* height: 8pc;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  background-size: cover;
+  height: 10pc;
+  background-attachment: scroll;
 }
 @supports (-webkit-touch-callout: inherit) {
   .background_header {
+    background-position: center;
     background-size: cover;
     height: 10pc;
     background-attachment: scroll;
