@@ -47,10 +47,6 @@ h1 {
   margin: 0;
 }
 
-h1 {
-  font-size: 2em;
-}
-
 h1,
 h2 {
   font-family: var(--Apex-bold);
@@ -65,16 +61,13 @@ h2 {
 
 p {
   font-family: var(--montserrat);
+  padding: 5%;
 }
 
 a {
   font-family: var(--bebas-neuce);
   text-transform: uppercase;
   text-decoration: none;
-}
-
-.top_content {
-  padding: 0 30px;
 }
 
 .senter_content {
@@ -84,43 +77,23 @@ a {
 }
 
 /* ----------------------------- Header Section ----------------------------- */
-.header {
-  background-color: var(--river);
-}
+
 .background_header {
-  /* set image for background   */
-  background-image: url("/images/IMG_3364.jpg");
-
-  /*  full height image  */
-  height: 70vh;
-
-  /*  image starting position- eg. top, right, left, bottom  */
-  background-position: center;
-
-  /*  size of image, eg- 50%, 3rem, 500px etc.
-       cover= scales the image as large as possible without stretching
-     */
-  background-size: cover;
+  background-image: url(/images/IMG_3364.jpg);
+  height: 8pc;
+  /* background-position-y: 30px; */
+  background-size: contain;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.header h1 {
-  /* background-color: var(--river); */
-  font-size: 2rem;
-  color: var(--white);
-  line-height: 20px;
 }
 
 /* ------------------------------ Text section ------------------------------ */
 
 .top_content p,
 .suport_us p {
-  padding: 10px 30px;
   font-size: var(--lemon-milk-font);
-  font-weight: bold;
   font-size: 15px;
   text-align: center;
-  line-height: 20px;
   color: var(--dark-blue);
 }
 
@@ -155,35 +128,17 @@ a {
   padding: 0 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .card {
-    width: 300px;
-    height: 350px;
-    margin: 10px;
-  }
-
-  .event_name {
-    font-size: 25px;
-  }
-}
-
 .card:hover {
   cursor: pointer;
 }
 /* ------------------------------ get involved ------------------------------ */
-.suport_us {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
+
 .suport_us img {
   width: 70%;
 
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
-}
-.suport_us p {
-  text-align: start;
 }
 
 .button {
@@ -230,12 +185,10 @@ a {
     font-size: 45pt;
   }
 
-  .top_content img {
-    width: 600px;
+  .background_header {
+    height: 20pc;
   }
-  /* .section_width {
-    max-width: 1000px;
-  } */
+
   /* Text content */
   .top_content p,
   .suport_us p {
@@ -253,6 +206,15 @@ a {
     margin-left: auto;
   }
   .button a {
+    font-size: 25px;
+  }
+  .card {
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+  }
+
+  .event_name {
     font-size: 25px;
   }
 }
