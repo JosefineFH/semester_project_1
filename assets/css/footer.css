@@ -2,6 +2,7 @@ footer {
   background-color: var(--river);
   display: grid;
   padding-bottom: 30px;
+  margin-top: 20px;
 }
 .bolder {
   font-weight: bolder;
@@ -15,14 +16,14 @@ footer {
 
 .contact_info {
   display: grid;
-  padding-top: 20px;
-  justify-items: center;
 }
 
 .address {
   display: grid;
   grid-template-columns: 80px 1fr;
-  /* margin: 15px; */
+  margin: 15px;
+
+  color: var(--white);
 }
 
 .contact_icon {
@@ -35,7 +36,6 @@ footer {
 }
 
 .contact_info p {
-  color: var(--white);
   font-family: var(--montserrat);
   margin: 0;
   padding: 0;
@@ -120,5 +120,5 @@ footer {
   }
   .contact_info p {
     font-size: 18px;
-}
+  }
 }

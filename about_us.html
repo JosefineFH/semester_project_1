@@ -5,84 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="This is our upcoming event at the science museum this summer.">
+    <meta name="keywords"
+        content="science, museum, larvik, events, energetica exhibition, NEMO Science, night in the museum, professor of aeronatutics ">
+    <meta name="author" content="Josefine Holth">
+    <link rel="icon" href="/images/icons/atom.png" type="image/x-icon">
+
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/navbar.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <title>Science Museum | Visit us</title>
+    <title>The Science Museum | Visit us or contact us</title>
 </head>
-<style>
-    .width {
-        margin: 30px;
-    }
-
-    .yellow {
-        color: var(--yellow);
-        font-size: 35px;
-    }
-
-
-    .img_size {
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .icon {
-        margin: 10px;
-        width: 50px;
-    }
-
-    .bold {
-        font-weight: bold;
-    }
-
-    .visiting_address {
-        display: grid;
-        grid-template-columns: 70px 1fr;
-    }
-
-    .info {
-        align-self: center;
-        justify-self: center;
-
-    }
-
-    .decore {
-        width: 200px;
-    }
-
-    .info p {
-        margin: 0;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
-    /* 
-    .info_shops {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-        border: gold 2px solid;
-    } */
-
-    .shop_info {
-        display: grid;
-        margin: 0 30px;
-    }
-
-    .image {
-        width: 80%;
-        display: block;
-        margin: 30px auto;
-    }
-
-    .opening_hours {
-        text-align: center;
-    }
-</style>
 
 <body>
     <header>
@@ -115,34 +49,39 @@
             <h1 class="header_text"> the Science Museum</h1>
         </div>
     </header>
-    <main>
-        <section class="width">
-            <h1 class="yellow">visit us</h1>
-            <img class="img_size" src="/images/building-images/hammerdalen.jpg" alt="">
-            <div class="contact">
+    <main class="about_us main_section">
+        <section>
+            <h1>visit us</h1>
+            <img class="decore" src="/images/decore/red_line.png" alt="red line for decore">
+            <artical>
 
-                <div class="visiting_address">
-                    <img class="icon" src="/images/icons/maps.png" alt="map">
-                    <div class="info">
-                        <p class="bold">The Scienc Museum is located at:</p>
-                        <p>Nedre Fritzøegate 2</p>
-                        <p>3264 Larvik</p>
+                <div class="contact_info">
+                    <div class="address">
+                        <div class="contact_icon">
+                            <img src="/images/icons/maps.png" alt=" map marker">
+                        </div>
+                        <div class="info">
+                            <p class="bolder">The Community Science Museum</p>
+                            <p> Nedre Fritzøegate 2</p>
+                            <p>3264 Larvik</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="contact">
-                    <div class="visiting_address">
-                        <img class="icon" src="/images/icons/laptop-e-mail.png"
-                            alt="email and phone number info for contacting us">
+                    <div class="address">
+                        <div class="contact_icon">
+                            <img src="/images/icons/laptop-e-mail.png" alt="email">
+                        </div>
                         <div class="info">
                             <p>Tlf: 999 99 999</p>
                             <p>Email: science.museum@mail.com</p>
                         </div>
                     </div>
                 </div>
+            </artical>
+
         </section>
-        <section class="width">
-            <h2 class="yellow">Admission</h2>
+
+        <section>
+            <h2>Admission</h2>
             <img class="decore" src="/images/decore/red_line.png" alt="red line for decore">
             <p>The entrance is free for all. </p>
             <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per
@@ -152,26 +91,54 @@
                 contact us to
                 arrange the tour.</p>
         </section>
-        <section class="width">
-            <h2 class="yellow">hours</h2>
+
+        <section>
+            <h2>hours</h2>
             <img class="decore" src="/images/decore/red_line.png" alt="red line for decore">
             <div class="opening_hours">
-                <p>Monday: Closed </p>
-                <p>Tuesday: 10:00 – 16:00 </p>
-                <p>Wednesday: 10:00 – 16:00</p>
-                <p>Thursday: 10:00 – 16:00</p>
-                <p>Friday: 10:00 – 19:00</p>
-                <p>Saturday: 9:00 – 16:00</p>
-                <p>Sunday: 9:00 – 13:00</p>
+                <table>
+                    <tr class="closed">
+                        <td>Monday:</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday:</td>
+                        <td>10:00 – 16:00</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday:</td>
+                        <td>10:00 – 16:00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday:</td>
+                        <td>10:00 – 16:00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday:</td>
+                        <td>10:00 – 19:00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday:</td>
+                        <td>9:00 – 16:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday:</td>
+                        <td>9:00 – 13:00</td>
+                    </tr>
+
+                </table>
             </div>
         </section>
-        <section class="width">
-            <h2 class="yellow">Accessibility</h2>
-            <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the
+        <section>
+            <h2>Accessibility</h2>
+            <img class="decore" src="/images/decore/red_line.png" alt="red line for decore">
+            <p>The museum has wheelchair accessibility ramps. </p>
+            <p>It also has audio guides and braille display signs for the
                 visually impaired.</p>
         </section>
-        <section class="width">
-            <div class="image">
+
+        <section>
+            <div>
                 <img class="img_size" src="/images/building-images/cafe-sliperiet.jpg" alt="">
             </div>
 
@@ -192,6 +159,22 @@
                 </div>
             </div>
         </section>
+        <section class="contact_us_form" id="contact_us_form">
+            <h2>Contact us if you have eny questions</h2>
+
+            <form action="">
+                <label class="event_form_label" for="name">Full Name</label>
+                <input type="text" id="name">
+
+                <label class="event_form_label" for="email">Email</label>
+                <input type="email">
+
+                <label for="events" class="event_form_label">select an event</label>
+                <textarea name="message_us" id="message_us" cols="30" rows="10"></textarea>
+
+                <input class="button contact" type="submit">
+            </form>
+        </section>
     </main>
     <footer>
         <div class="footer_logo">
@@ -200,11 +183,12 @@
 
         <div class="links">
             <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">visit us</a></li>
-                <li><a href="">events</a></li>
-                <li><a href="">get involved</a></li>
-                <li><a href="">our exhibitions</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="/about_us.html">visit us</a></li>
+                <li><a href="/events.html">events</a></li>
+                <li><a href="/get_invovled.html">get involved</a></li>
+                <li><a href="/exhibitions.html">our exhibitions</a></li>
+                <li><a href="/about_us.html#contact_us_form">contact us</a></li>
             </ul>
         </div>
 
@@ -214,7 +198,7 @@
                     <img src="/images/icons/maps.png" alt="">
                 </div>
                 <div class="contact_info">
-                    <p>The Community Science Museum</p>
+                    <p class="bolder">The Community Science Museum</p>
                     <p> Nedre Fritzøegate 2</p>
                     <p>3264 Larvik</p>
                 </div>

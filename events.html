@@ -17,120 +17,6 @@
     <link rel="stylesheet" href="/assets/css/footer.css">
     <title>The Science Museum | Our events</title>
 </head>
-<style>
-    .event {
-        padding: 20px 30px;
-        justify-items: center;
-        display: grid;
-        grid-gap: 30px;
-    }
-
-    .date {
-        font-family: var(--bebas-neuce);
-    }
-
-    .event h2,
-    .book_event h2 {
-        text-align: start;
-        font-size: 30px;
-        font-family: var(--bebas-neuce);
-        color: var(--tomatos);
-        margin: 0;
-    }
-
-    .event p {
-        text-align: start;
-        padding: 5px;
-    }
-
-    .event img {
-        border-radius: 100%;
-        width: 250px;
-        height: 250px;
-        padding: 10px;
-    }
-
-    .event:nth-child(even) {
-        background-color: var(--sunflower);
-    }
-
-    .book_event h2 {
-        text-align: center;
-    }
-
-    form {
-        display: grid;
-        min-width: 400px;
-        max-width: 700px;
-        margin: auto;
-    }
-
-    input[type=text],
-    input[type=email] {
-        border: none;
-        border-bottom: 3px solid var(--sunflower);
-        height: 30px;
-        padding: 30px;
-        margin-bottom: 20px;
-
-    }
-
-    input[type=text]:focus,
-    input[type=email]:focus {
-        border: none;
-        border: solid var(--orange);
-        outline-width: 0;
-    }
-
-    .event_form_label {
-        display: block;
-        font-family: var(--bebas-neuce);
-        font-size: 2em;
-        color: var(--tomatos);
-    }
-
-    select {
-        height: 55px;
-        padding: 10px;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    input[type=submit] {
-        border: none;
-
-    }
-
-    @media only screen and (min-width: 768px) {
-        .event {
-            grid-template-columns: 1fr 200px;
-        }
-
-        .event:nth-child(even) {
-            grid-template-columns: 200px 1fr;
-        }
-
-
-        .content {
-            order: 1;
-            display: block;
-            margin: auto;
-        }
-
-        .image_content {
-            order: 2;
-        }
-    }
-
-
-    @media only screen and (min-width: 1024px) {
-        section {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-    }
-</style>
 
 <body>
     <header>
@@ -168,7 +54,7 @@
         <section>
             <h1>Special events</h1>
         </section>
-        <section>
+        <section class="main_section">
             <article class="event">
                 <div class="content" id="professor_of_aeronautics">
                     <p class="date">06.06.21</p>
@@ -182,6 +68,7 @@
                         to
                         get a
                         good seat.</p>
+                    <p class="bold">Prize: 399,-</p>
                 </div>
                 <div class="image_content">
                     <img src="/images/events/spacex.png" alt="Space X rocket">
@@ -196,6 +83,10 @@
                         and
                         science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the
                         wonders of science.</p>
+                    <div class="sold">
+                        <p class="bold sold_out">Prize: 399,-</p>
+                        <p class="sold_out_text">Sold Out!</p>
+                    </div>
                 </div>
                 <div>
                     <img src="/images/events/hammerdalen_night_in_museum.jpg" alt="Space X rocket">
@@ -212,6 +103,7 @@
                         of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that
                         shows
                         how turbines are able to use and control wind to create power.</p>
+                    <p class="bold">Prize: 399,-</p>
                 </div>
                 <div class="image_content">
                     <img src="/images/events/energetica_exhibition.png" alt="Space X rocket">
@@ -230,7 +122,7 @@
                 <label for="events" class="event_form_label">select an event</label>
                 <select name="event" id="events">
                     <option value="professor_of_aeronautics ">Visit from Professor of Aeronautics </option>
-                    <option value="night_in_museum">Night in the Museum</option>
+                    <option value="night_in_museum" disabled>Night in the Museum</option>
                     <option value="energetica_exhibition">Energetica Exhibition on Loan</option>
                 </select>
 
@@ -246,11 +138,12 @@
 
         <section class="links">
             <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">visit us</a></li>
-                <li><a href="">events</a></li>
-                <li><a href="">get involved</a></li>
-                <li><a href="">our exhibitions</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="/about_us.html">visit us</a></li>
+                <li><a href="/events.html">events</a></li>
+                <li><a href="/get_invovled.html">get involved</a></li>
+                <li><a href="/exhibitions.html">our exhibitions</a></li>
+                <li><a href="/about_us.html#contact_us_form">contact us</a></li>
             </ul>
         </section>
 
