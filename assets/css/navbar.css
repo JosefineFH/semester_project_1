@@ -254,7 +254,7 @@ nav a:hover{
   nav a {
     color: var(--white);
     padding: 10px;
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 2px;
     border-left: var(--river) 4px solid;
   }
