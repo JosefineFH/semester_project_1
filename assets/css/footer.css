@@ -46,9 +46,9 @@ footer {
   color: var(--white);
   border-left: var(--river) 3px solid;
   letter-spacing: 2px;
+  text-decoration: none;
 }
 .links a:hover {
-  text-decoration: none;
   color: var(--white);
   border-left: var(--white) 3px solid;
   background-color: #f7efe777;
@@ -88,7 +88,7 @@ footer {
   }
   .links a {
     padding: 0 20px;
-    font-size: 25px;
+    font-size: 20px;
   }
   .contact_info {
     order: 1;

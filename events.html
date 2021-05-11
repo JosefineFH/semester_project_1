@@ -6,18 +6,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="This is our upcoming event at the science museum this summer.">
+    <meta name="keywords"
+        content="science, museum, larvik, events, energetica exhibition, NEMO Science, night in the museum, professor of aeronatutics ">
     <meta name="author" content="Josefine Holth">
     <link rel="icon" href="/images/icons/atom.png" type="image/x-icon">
 
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/navbar.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <title>The Science Museum | Welcome to Science</title>
+    <title>The Science Museum | Our events</title>
 </head>
 <style>
+    .event {
+        padding: 20px 30px;
+        justify-items: center;
+        display: grid;
+        grid-gap: 30px;
+    }
 
+    .date {
+        font-family: var(--bebas-neuce);
+    }
+
+    .event h2,
+    .book_event h2 {
+        text-align: start;
+        font-size: 30px;
+        font-family: var(--bebas-neuce);
+        color: var(--tomatos);
+        margin: 0;
+    }
+
+    .event p {
+        text-align: start;
+        padding: 5px;
+    }
+
+    .event img {
+        border-radius: 100%;
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+    }
+
+    .event:nth-child(even) {
+        background-color: var(--sunflower);
+    }
+
+    .book_event h2 {
+        text-align: center;
+    }
+
+    form {
+        display: grid;
+        min-width: 400px;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    input[type=text],
+    input[type=email] {
+        border: none;
+        border-bottom: 3px solid var(--sunflower);
+        height: 30px;
+        padding: 30px;
+        margin-bottom: 20px;
+
+    }
+
+    input[type=text]:focus,
+    input[type=email]:focus {
+        border: none;
+        border: solid var(--orange);
+        outline-width: 0;
+    }
+
+    .event_form_label {
+        display: block;
+        font-family: var(--bebas-neuce);
+        font-size: 2em;
+        color: var(--tomatos);
+    }
+
+    select {
+        height: 55px;
+        padding: 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    input[type=submit] {
+        border: none;
+
+    }
+
+    @media only screen and (min-width: 768px) {
+        .event {
+            grid-template-columns: 1fr 200px;
+        }
+
+        .event:nth-child(even) {
+            grid-template-columns: 200px 1fr;
+        }
+
+
+        .content {
+            order: 1;
+            display: block;
+            margin: auto;
+        }
+
+        .image_content {
+            order: 2;
+        }
+    }
+
+
+    @media only screen and (min-width: 1024px) {
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+    }
 </style>
 
 <body>
@@ -53,8 +165,80 @@
     </header>
 
     <main>
-        <h1>Events</h1>
+        <section>
+            <h1>Special events</h1>
+        </section>
+        <section>
+            <article class="event">
+                <div class="content" id="professor_of_aeronautics">
+                    <p class="date">06.06.21</p>
+                    <h2>visit from Professor of Aeronautics - Sheila Widnall</h2>
+                    <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of
+                        Technology will be delivering 3 lectures on the development of aeronautics and where the future
+                        lies
+                        in this exciting ‘space’.</p>
+                    <p>There will be a number of available tickets so <a href="#book_event"> contact us here </a> for a
+                        ticket and
+                        to
+                        get a
+                        good seat.</p>
+                </div>
+                <div class="image_content">
+                    <img src="/images/events/spacex.png" alt="Space X rocket">
+                </div>
+            </article>
+
+            <article class="event" id="night_in_museum">
+                <div class="content">
+                    <p class="date">12.07.21</p>
+                    <h2>Night in the Museum</h2>
+                    <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs
+                        and
+                        science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the
+                        wonders of science.</p>
+                </div>
+                <div>
+                    <img src="/images/events/hammerdalen_night_in_museum.jpg" alt="Space X rocket">
+                </div>
+            </article>
+
+            <article class="event" id="energetica_exhibition">
+                <div class="content">
+                    <p class="date">02.08.21</p>
+                    <h2>Energetica Exhibition on Loan</h2>
+                    <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the
+                        Community Science Museum. It’s a series of installations that allow visitors to experience the
+                        power
+                        of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that
+                        shows
+                        how turbines are able to use and control wind to create power.</p>
+                </div>
+                <div class="image_content">
+                    <img src="/images/events/energetica_exhibition.png" alt="Space X rocket">
+                </div>
+            </article>
+        </section>
+        <section class="book_event" id="book_event">
+            <h2>Contact us to book a spot at an event</h2>
+            <form action="">
+                <label class="event_form_label" for="name">Full Name</label>
+                <input type="text" id="name">
+
+                <label class="event_form_label" for="email">Email</label>
+                <input type="email">
+
+                <label for="events" class="event_form_label">select an event</label>
+                <select name="event" id="events">
+                    <option value="professor_of_aeronautics ">Visit from Professor of Aeronautics </option>
+                    <option value="night_in_museum">Night in the Museum</option>
+                    <option value="energetica_exhibition">Energetica Exhibition on Loan</option>
+                </select>
+
+                <input class="button" type="submit">
+            </form>
+        </section>
     </main>
+
     <footer>
         <section class="footer_logo">
             <img lass="footer_logo" src="/images/science_museum_whitepng.png" alt="">
@@ -76,7 +260,7 @@
                     <img src="/images/icons/maps.png" alt="">
                 </div>
                 <div class="contact_info">
-                    <p>The Community Science Museum</p>
+                    <p class="bolder">The Science Museum</p>
                     <p> Nedre Fritzøegate 2</p>
                     <p>3264 Larvik</p>
                 </div>
@@ -92,5 +276,6 @@
             </div>
         </section>
     </footer>
+</body>
 
 </html>
