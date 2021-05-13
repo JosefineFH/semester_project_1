@@ -1,122 +1,19 @@
-.tabs {
-  margin-top: 30px;
-  position: relative;
-  clear: both;
-  height: 600vw;
-}
 
-.tab label {
-  background: #eee;
-  padding: 10px;
-  margin-left: -1px;
-  position: relative;
-  left: 1px;
-  text-transform: uppercase;
-  border-left: solid 1px #fff;
-  font-size: 15px;
-
-  font-family: var(--montserrat);
-  font-weight: bold;
-}
-.tab label:hover {
-  background: var(--orange);
-  color: var(--white);
-}
-
-.tab [type="radio"] {
-  display: none;
-}
-
-.content {
-  position: relative;
-}
-.content img {
-  display: block;
-  margin: 20px auto;
-  width: 80%;
-}
-.content p {
-  margin: 30px;
-}
-
-[type="radio"]:checked ~ label {
-  background: var(--orange);
-  z-index: 2;
-}
-
-[type="radio"]:checked ~ label ~ .content {
-  z-index: 1;
-}
-
-[type="radio"] ~ label {
-  display: none;
-}
-
-@media screen and (min-width: 1024px) {
-  [type="radio"] ~ label {
-    display: block;
-    font-size: 18px;
-  }
-
-  .content {
-    position: absolute;
-
-    background: #fff;
-    right: 0;
-    height: 90%;
-  }
-
-  .tab {
-    float: left;
-  }
-  .tabs {
-    position: relative;
-    clear: both;
-    height: 80vw;
-    display: block;
-    margin: 0 auto;
-    width: 1000px;
-  }
-}
-.move_down_text {
-  position: relative;
-  top: 10px;
-  max-width: 1000px;
-  margin: 0;
-  /* border: greenyellow 3px solid; */
-  height: 200px;
-}
-.content > div {
-  background-color: greenyellow;
+/* .exhibition {
+  background-image: url(/assets/svg/exhibition_background.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
   width: 100%;
-}
-.exhibition {
-  background-image: url("/assets/svg/exhibition_background.svg");
-}
-.cosmology_exhibition {
-  color: var(--midnight-blue);
-  background-image: url("/assets/svg/exhibition_background.svg");
-}
-.biology_exhibition {
-  background-image: url("/assets/svg/exhibition_background.svg");
+  height: 22pc;
+  background-position: center;
+  background-size: cover;
+  line-height: 1.5;
+  font-size: 4rem;
+} */
 
-  /* background: -webkit-linear-gradient(#21a366, #3f51b5); */
-}
-.robotics_exhibition {
-  background-image: url("/assets/svg/exhibition_background.svg");
 
-  /* background: -webkit-linear-gradient(#e13f5f, #9c27b0); */
-}
-.ecology_exhibition {
-  background-image: url("/assets/svg/exhibition_background.svg");
-
-  /* background: -webkit-linear-gradient(#312c38, #3f51b5); */
-}
-.evolution_exhibition {
-  background-image: url("/assets/svg/exhibition_background.svg");
-
-  /* background: -webkit-linear-gradient(#9231be, #3f51b5); */
-}
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 4rem;
+  }
+  
+  }

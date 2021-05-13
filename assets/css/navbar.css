@@ -7,7 +7,6 @@
   background-color: var(--river);
   color: var(--white);
   margin: 0;
-  font-size: 1.6em;
 }
 .menu-items {
   display: inline-flex;
@@ -33,9 +32,6 @@ nav {
 #hamburger-menu:checked ~ nav {
   display: block;
 }
-#hamburger-menu:checked ~ nav {
-  display: block;
-}
 
 nav {
   width: 100%;
@@ -46,10 +42,12 @@ nav {
   z-index: 50;
   right: 0px;
   background-color: var(--white);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 nav ul {
-  display: block;
+  padding: 0;
+
+  /* display: block; */
   margin: 200px 0;
   list-style-type: none;
   text-align: center;
@@ -76,21 +74,16 @@ nav a:hover{
   margin-top: 20px;
   flex-wrap: wrap;
   display: flex;
-  /* grid-template-columns: 1fr 1fr; */
-  /* grid-gap: 10px; */
+  grid-gap: 10px;
   justify-content: center;
-  justify-items: center;
 }
 .container {
   cursor: pointer;
   display: block;
-  /* border: red 1px solid; */
-  margin-top: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 20px 10px ;
 
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 
   position: relative;
   box-shadow: #00000059 0px 3px 6px;
@@ -121,34 +114,21 @@ nav a:hover{
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  
+  /* -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%); 
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: rgba(255, 255, 255, 0.534);
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
 .our_exhibitions a {
   color: var(--tomatos);
 }
 .our_exhibitions:hover {
-  background-image: url("/images/building-images/hammerdalen-2.jpg");
+  background-image: 
+  linear-gradient(
+    rgba(238, 236, 236, 0.50), 
+    rgba(202, 202, 202, 0.50)
+  ), 
+  url("/images/building-images/hammerdalen-2.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -158,7 +138,12 @@ nav a:hover{
 }
 
 .cosmology:hover {
-  background-image: url("/images/events/cosmology.jpg");
+  background-image:    
+  linear-gradient(
+    rgba(238, 236, 236, 0.50), 
+    rgba(202, 202, 202, 0.50)
+  ), 
+  url("/images/events/cosmology.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -167,7 +152,12 @@ nav a:hover{
   color: #21a366;
 }
 .biology:hover {
-  background-image: url("/images/events/biology.jpg");
+  background-image: 
+  linear-gradient(
+    rgba(238, 236, 236, 0.50), 
+    rgba(202, 202, 202, 0.50)
+  ), 
+  url("/images/events/biology.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -176,7 +166,12 @@ nav a:hover{
   color: #e13f5f;
 }
 .robotics:hover {
-  background-image: url("/images/events/robotics.jpg");
+  background-image: 
+  linear-gradient(
+    rgba(238, 236, 236, 0.50), 
+    rgba(202, 202, 202, 0.50)
+  ), 
+  url("/images/events/robotics.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -185,7 +180,12 @@ nav a:hover{
   color: #0455bf;
 }
 .ecology:hover {
-  background-image: url("/images/events/ecology.jpg");
+  background-image: 
+  linear-gradient(
+    rgba(238, 236, 236, 0.50), 
+    rgba(202, 202, 202, 0.50)
+  ), 
+  url("/images/events/ecology.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -194,7 +194,12 @@ nav a:hover{
   color: #9231be;
 }
 .evolution:hover {
-  background-image: url("/images/events/evolution.jpg");
+  background-image: 
+  linear-gradient(
+    rgba(238, 236, 236, 0.50), 
+    rgba(202, 202, 202, 0.50)
+  ), 
+  url("/images/events/evolution.jpg");
   background-size: cover;
   background-position: bottom;
 }

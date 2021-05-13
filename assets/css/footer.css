@@ -2,7 +2,6 @@ footer {
   background-color: var(--river);
   display: grid;
   padding-bottom: 30px;
-  margin-top: 20px;
 }
 .bolder {
   font-weight: bolder;
@@ -39,7 +38,6 @@ footer {
   font-family: var(--montserrat);
   margin: 0;
   padding: 0;
-  font-size: 15px;
 }
 
 .links a {
@@ -88,7 +86,6 @@ footer {
   }
   .links a {
     padding: 0 20px;
-    font-size: 20px;
   }
   .contact_info {
     order: 1;
@@ -103,7 +100,6 @@ footer {
   footer {
     justify-content: center;
     grid-template-columns: 300px 300px 300px;
-    margin-top: 4pc;
 
   }
   .footer_logo {
@@ -118,7 +114,5 @@ footer {
   .links ul {
     display: block;
   }
-  .contact_info p {
-    font-size: 18px;
-  }
+
 }
