@@ -35,14 +35,15 @@ footer {
 }
 
 .contact_info p {
-  font-family: var(--montserrat);
+  /* font-family: var(--montserrat); */
   margin: 0;
   padding: 0;
 }
 
-.links a {
+.links a{
   color: var(--white);
-  border-left: var(--river) 3px solid;
+  /* border-left: var(--river) 3px solid; */
+  font-size: 12px;
   letter-spacing: 2px;
   text-decoration: none;
 }
@@ -99,7 +100,7 @@ footer {
 @media only screen and (min-width: 1024px) {
   footer {
     justify-content: center;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 200px 200px 400px;
 
   }
   .footer_logo {
@@ -109,7 +110,6 @@ footer {
     display: block;
     margin: auto 10px;
     grid-column: 2;
-    padding-top: 30px;
   }
   .links ul {
     display: block;
