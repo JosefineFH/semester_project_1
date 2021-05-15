@@ -17,21 +17,14 @@
   --midnight-blue: #2c3e50;
   --river: #011c26;
   --wisteria: #8e44ad;
-  --light-river: #3498DB;
-  /* --tomatos: #ee4540; */
+  --light-river: #3498db;
+  --orange: #ee4540;
 
   --gray-blue: #768ba6;
 
-  /* --light-pink: #bfa8b1; */
-
   --yellow-background-color: #f2b7051f;
 }
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: var(--white-ish);
-}
+
 body,
 html,
 h1 {
@@ -41,12 +34,16 @@ h1 {
 
 h1,
 h2 {
-  font-family: var( --bebas-neuce), sans-serif !important;
+  font-family: var(--bebas-neuce), sans-serif !important;
   text-align: center;
   text-transform: uppercase;
 }
-h1{
+h1 {
   letter-spacing: -2px;
+  font-size: 2.5rem;
+}
+h2 {
+  color: var(--midnight-blue);
 }
 p {
   font-size: large;
@@ -58,15 +55,12 @@ a {
   font-family: var(--montserrat), sans-serif;
   text-transform: uppercase;
   font-weight: bolder;
-  color: var(--tomatos);
+  color: var(--orange);
 }
 a:hover {
   color: var(--wisteria);
 }
 
-/* section{
-  padding: 30px 0;
-} */
 .purple_text {
   color: var(--wisteria);
 }
@@ -75,7 +69,7 @@ a:hover {
   color: var(--white);
 }
 .orange_text {
-  color: var(--tomatos);
+  color: var(--orange);
 }
 .senter_content {
   display: block;
@@ -128,7 +122,11 @@ a:hover {
 
 .card:hover {
   cursor: pointer;
-  background-image: linear-gradient(145deg, #e68027 50%, var(--orange));
+  background-image: linear-gradient(
+    145deg,
+    var(--midnight-blue) 50%,
+    var(--wisteria)
+  );
 }
 
 /* --------------------------------- Buttons -------------------------------- */
@@ -166,9 +164,9 @@ input[type="submit"] {
 }
 .content_button .button:hover,
 input[type="submit"]:hover {
-  background: linear-gradient(145deg, #e68027, #ff982e);
+  background: linear-gradient(145deg, var(--wisteria), var(--river));
   border-radius: 50px;
-  box-shadow: inset 10px 10px 7px #d97925, inset -10px -10px 7px #ffa331;
+  box-shadow: inset 20px 20px 60px #793a93, inset -20px -20px 60px #a34ec7;
 }
 
 /* ------------------------------- events.html ------------------------------ */
@@ -187,7 +185,7 @@ input[type="submit"]:hover {
 .book_event h2 {
   text-align: start;
   font-family: var(--bebas-neuce);
-  color: var(--tomatos);
+  color: var(--orange);
   margin: 0;
   letter-spacing: 2px;
   margin: 0 30px;
@@ -237,7 +235,7 @@ textarea:focus {
 .event_form_label {
   display: block;
   font-family: var(--bebas-neuce);
-  color: var(--tomatos);
+  color: var(--orange);
 }
 
 select {
@@ -265,7 +263,7 @@ input[type="submit"] {
 
 .sold_out_text {
   font-weight: bolder;
-  color: var(--tomatos);
+  color: var(--orange);
 }
 
 /* ------------------------------ about_us.html ----------------------------- */
@@ -295,7 +293,7 @@ input[type="submit"] {
 }
 
 .closed {
-  color: var(--tomatos);
+  color: var(--orange);
   font-weight: bolder;
 }
 
@@ -308,7 +306,7 @@ input[type="submit"] {
 .book_event {
   margin-top: 50px;
   padding: 50px;
-  border-top: 3px ridge var(--tomatos);
+  border-top: 3px ridge var(--orange);
 }
 
 input[type="submit"].contact {
@@ -318,7 +316,9 @@ input[type="submit"].contact {
 /* --------------------------------- Tablet --------------------------------- */
 /* size of 768px */
 @media screen and (min-width: 768px) {
-  h1,
+  h1 {
+    font-size: 4rem;
+  }
   h2 {
     font-size: 3rem;
   }
@@ -348,7 +348,6 @@ input[type="submit"].contact {
 
   .event:nth-child(even) {
     grid-template-columns: 300px 1fr;
-    
   }
 
   .content {
@@ -367,12 +366,12 @@ input[type="submit"].contact {
 
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 4rem;
+    font-size: 6rem;
   }
   h2 {
     font-size: 3.5rem;
   }
-  p{
+  p {
     padding: 0 40px;
   }
   .background_header {
@@ -390,11 +389,13 @@ input[type="submit"].contact {
 }
 
 @media screen and (min-width: 1440px) {
-  section{
-    border: purple 2px solid;
+  h1 {
+    font-size: 6rem;
+  }
+  section {
     max-width: 1400px;
     display: block;
-    margin: auto ;
+    margin: auto;
   }
   .header h1 {
     line-height: 3rem;

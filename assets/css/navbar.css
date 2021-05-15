@@ -1,6 +1,6 @@
 .background_header {
-  background-image: url('/images/headers/tablet_main_header.jpg');
-  height: 12pc;
+  background-image: url("/images/background_image.jpg");
+  height: 6pc;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -15,7 +15,7 @@
   color: var(--white);
   margin: 0;
   line-height: 1.4pc;
-  /* font-size: 1.5rem; */
+  font-size: 3rem;
 }
 .menu-items {
   display: inline-flex;
@@ -63,16 +63,16 @@ nav li {
   margin: 30px 0;
 }
 nav a {
-  font-family: 'SFMonoRegular',monospace !important;
+  font-family: "SFMonoRegular", monospace !important;
   color: var(--wisteria);
   text-decoration: none;
   font-size: 40px;
 }
-nav a:hover{
+nav a:hover {
   color: var(--white);
 }
-p{
-  font-family: 'Manrope',sans-serif !important;
+p {
+  font-family: "Manrope", sans-serif !important;
 }
 .right {
   position: absolute;
@@ -90,7 +90,7 @@ p{
 .container {
   cursor: pointer;
   display: block;
-  margin: 10px 10px ;
+  margin: 10px 10px;
 
   width: 120px;
   height: 120px;
@@ -101,7 +101,7 @@ p{
   background: linear-gradient(145deg, #ffffff, #e6e6e6);
 }
 .container img {
-  width: 30px;
+  width: 50px;
 }
 .container a {
   display: inline-flex;
@@ -127,19 +127,18 @@ p{
   left: 50%;
   /* -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); */
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 
 .our_exhibitions a {
-  color: var(--tomatos);
+  color: var(--orange);
 }
 .our_exhibitions:hover {
-  background-image: 
-  linear-gradient(
-    rgba(238, 236, 236, 0.50), 
-    rgba(202, 202, 202, 0.50)
-  ), 
-  url("/images/building-images/hammerdalen-2.jpg");
+  background-image: linear-gradient(
+      rgba(238, 236, 236, 0.5),
+      rgba(202, 202, 202, 0.5)
+    ),
+    url("/images/building-images/hammerdalen-2.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -149,12 +148,11 @@ p{
 }
 
 .cosmology:hover {
-  background-image:    
-  linear-gradient(
-    rgba(238, 236, 236, 0.50), 
-    rgba(202, 202, 202, 0.50)
-  ), 
-  url("/images/events/cosmology.jpg");
+  background-image: linear-gradient(
+      rgba(238, 236, 236, 0.5),
+      rgba(202, 202, 202, 0.5)
+    ),
+    url("/images/events/cosmology.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -163,12 +161,11 @@ p{
   color: #21a366;
 }
 .biology:hover {
-  background-image: 
-  linear-gradient(
-    rgba(238, 236, 236, 0.50), 
-    rgba(202, 202, 202, 0.50)
-  ), 
-  url("/images/events/biology.jpg");
+  background-image: linear-gradient(
+      rgba(238, 236, 236, 0.5),
+      rgba(202, 202, 202, 0.5)
+    ),
+    url("/images/events/biology.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -177,12 +174,11 @@ p{
   color: #e13f5f;
 }
 .robotics:hover {
-  background-image: 
-  linear-gradient(
-    rgba(238, 236, 236, 0.50), 
-    rgba(202, 202, 202, 0.50)
-  ), 
-  url("/images/events/robotics.jpg");
+  background-image: linear-gradient(
+      rgba(238, 236, 236, 0.5),
+      rgba(202, 202, 202, 0.5)
+    ),
+    url("/images/events/robotics.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -191,12 +187,11 @@ p{
   color: #0455bf;
 }
 .ecology:hover {
-  background-image: 
-  linear-gradient(
-    rgba(238, 236, 236, 0.50), 
-    rgba(202, 202, 202, 0.50)
-  ), 
-  url("/images/events/ecology.jpg");
+  background-image: linear-gradient(
+      rgba(238, 236, 236, 0.5),
+      rgba(202, 202, 202, 0.5)
+    ),
+    url("/images/events/ecology.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -205,43 +200,43 @@ p{
   color: #9231be;
 }
 .evolution:hover {
-  background-image: 
-  linear-gradient(
-    rgba(238, 236, 236, 0.50), 
-    rgba(202, 202, 202, 0.50)
-  ), 
-  url("/images/events/evolution.jpg");
+  background-image: linear-gradient(
+      rgba(238, 236, 236, 0.5),
+      rgba(202, 202, 202, 0.5)
+    ),
+    url("/images/events/evolution.jpg");
   background-size: cover;
   background-position: bottom;
 }
 
 @media only screen and (min-width: 768px) {
-  .header_text{
+  .header_text {
     line-height: 2.7pc;
-    font-size: 4rem;
-    letter-spacing: -7px;
+    font-size: 5rem;
+    letter-spacing: -4px;
   }
   .exhibitions {
     grid-gap: 20px;
   }
   .container {
     width: 200px;
-    height: 200px;
+    height: 150px;
   }
   .container a {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .background_header {
-    background-image: url('/images/headers/tablet_main_header.jpg');
-    height: 20pc;
+    background-image: url("/images/background_image.jpg");
+    height: 10pc;
   }
-  .header_text{
-    line-height: 3.7pc;
-    font-size: 5rem;
-    letter-spacing: -3px;  }
+  .header_text {
+    line-height: 5pc;
+    font-size: 7rem;
+    letter-spacing: -3px;
+  }
   label {
     display: none;
   }
@@ -283,6 +278,11 @@ p{
     padding: 0 20px;
     height: 130px;
   }
+  .header_text {
+    line-height: 5pc;
+    font-size: 8rem;
+    letter-spacing: -3px;
+  }
   .logo_icon {
     height: auto;
     width: 90px;
@@ -291,19 +291,11 @@ p{
     display: grid;
     grid-template-columns: 250px 250px 250px;
   }
-  .container {
-    width: 200px;
-    height: 200px;
+
+  .background_header {
+    background-image: url("/images/background_image.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 12pc;
   }
-  .container a {
-    font-size: 20px;
-}
-.container img {
-  width: 75px;
-}
-.background_header {
-  background-image: url('/images/headers/desktop_main_headerjpg.jpg');
-  background-size: cover;
-  height: 45pc;
-}
 }
