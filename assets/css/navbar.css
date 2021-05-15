@@ -35,6 +35,12 @@
 nav {
   display: none;
 }
+
+header label {
+  position: relative;
+  z-index: 99;
+}
+
 #hamburger-menu {
   display: none;
 }
@@ -51,7 +57,7 @@ nav {
   z-index: 50;
   right: 0px;
 
-  background-color: var(--white);
+  background-color: var(--river);
 }
 nav ul {
   margin: 200px 0;
@@ -64,7 +70,7 @@ nav li {
 }
 nav a {
   font-family: "SFMonoRegular", monospace !important;
-  color: var(--wisteria);
+  color: var(--white);
   text-decoration: none;
   font-size: 40px;
 }
