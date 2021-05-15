@@ -1,3 +1,10 @@
+.background_header {
+  background-image: url('/images/headers/tablet_main_header.jpg');
+  height: 12pc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .header {
   background-color: var(--river);
   display: flex;
@@ -85,8 +92,8 @@ p{
   display: block;
   margin: 10px 10px ;
 
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
 
   position: relative;
   box-shadow: #00000059 0px 3px 6px;
@@ -209,17 +216,10 @@ p{
 }
 
 @media only screen and (min-width: 768px) {
-
-  /* .logo {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-
   .header_text{
     line-height: 2.7pc;
     font-size: 4rem;
+    letter-spacing: -7px;
   }
   .exhibitions {
     grid-gap: 20px;
@@ -234,10 +234,14 @@ p{
 }
 
 @media only screen and (min-width: 1024px) {
-  .header_text{
-    line-height: 2.7pc;
-    font-size: 5rem;
+  .background_header {
+    background-image: url('/images/headers/tablet_main_header.jpg');
+    height: 20pc;
   }
+  .header_text{
+    line-height: 3.7pc;
+    font-size: 5rem;
+    letter-spacing: -3px;  }
   label {
     display: none;
   }
@@ -272,11 +276,6 @@ p{
     height: 100px;
     padding: 0 10px;
   }
- 
-
-  .header_text {
-    line-height: unset;
-}
 }
 
 @media only screen and (min-width: 1440px) {
@@ -301,5 +300,10 @@ p{
 }
 .container img {
   width: 75px;
+}
+.background_header {
+  background-image: url('/images/headers/desktop_main_headerjpg.jpg');
+  background-size: cover;
+  height: 45pc;
 }
 }

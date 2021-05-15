@@ -1,17 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue &family=Montserrat&display=swap");
 @font-face {
-  font-family: "Lemon Milk";
-  src: url("/assets/fonts/LEMONMILK-Bold.otf") format("opentype");
-
-  font-family: "Apex 2";
-  src: url("/assets/fonts/ApexMk2-Regular.otf") format("opentype");
-
   font-family: "Apex 2 - Bold";
   src: url("/assets/fonts/ApexMk2-BoldExtended.otf") format("opentype");
 }
 :root {
   /* fonts */
-  --lemon-milk-font: "Lemon Milk", sans-serif;
   --bebas-neuce: "Bebas Neue", sans-serif;
   --Apex-bold: "Apex 2 - Bold", sans-serif;
   --montserrat: "Montserrat", sans-serif;
@@ -24,7 +17,8 @@
   --midnight-blue: #2c3e50;
   --river: #011c26;
   --wisteria: #8e44ad;
-  --tomatos: #ee4540;
+  --light-river: #3498DB;
+  /* --tomatos: #ee4540; */
 
   --gray-blue: #768ba6;
 
@@ -47,11 +41,13 @@ h1 {
 
 h1,
 h2 {
-  font-family: "SFMonoRegular", monospace !important;
+  font-family: var( --bebas-neuce), sans-serif !important;
   text-align: center;
   text-transform: uppercase;
 }
-
+h1{
+  letter-spacing: -2px;
+}
 p {
   font-size: large;
   font-family: var(--montserrat);
@@ -59,7 +55,7 @@ p {
 }
 
 a {
-  font-family: var(--lemon-milk-font), sans-serif;
+  font-family: var(--montserrat), sans-serif;
   text-transform: uppercase;
   font-weight: bolder;
   color: var(--tomatos);
@@ -91,24 +87,6 @@ a:hover {
   width: 300px;
   display: block;
   margin: 20px auto;
-}
-
-/* ----------------------------- Header Section ----------------------------- */
-
-.background_header {
-  background-image: url("/images/header_img_2.jpg");
-  height: 11pc;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-@supports (-webkit-touch-callout: inherit) {
-  .background_header {
-    background-position: center;
-    background-size: cover;
-    height: 15pc;
-    background-attachment: scroll;
-  }
 }
 
 /* ----------------------------- Special Events ----------------------------- */
@@ -297,7 +275,7 @@ input[type="submit"] {
 }
 
 .visit_us {
-  color: var(--sunflower);
+  color: var(--light-river);
 }
 
 .about_us p {
@@ -344,9 +322,7 @@ input[type="submit"].contact {
   h2 {
     font-size: 3rem;
   }
-  .background_header {
-    height: 28pc;
-  }
+
   .images {
     width: 600px;
     display: block;
@@ -365,11 +341,14 @@ input[type="submit"].contact {
   }
 
   .event {
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 300px;
+    justify-content: center;
+    align-items: center;
   }
 
   .event:nth-child(even) {
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 300px 1fr;
+    
   }
 
   .content {
@@ -397,9 +376,9 @@ input[type="submit"].contact {
     padding: 0 40px;
   }
   .background_header {
-    background-position: center;
-    background-size: cover;
-    height: 40pc;
+    background-position: top;
+    background-size: contain;
+    height: 25pc;
   }
 
   form {
@@ -408,16 +387,12 @@ input[type="submit"].contact {
   .header_text {
     line-height: unset;
   }
-
-  .main_section {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
 }
 
 @media screen and (min-width: 1440px) {
   section{
-    max-width: 1000px;
+    border: purple 2px solid;
+    max-width: 1400px;
     display: block;
     margin: auto ;
   }
@@ -426,9 +401,5 @@ input[type="submit"].contact {
   }
   .events {
     display: flex;
-  }
-  .background_header {
-    background-position: center;
-    background-size: cover;
   }
 }
