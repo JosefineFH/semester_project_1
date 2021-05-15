@@ -1,53 +1,49 @@
-
-.dark_background, .light_background{
+.dark_background,
+.light_background {
   padding: 10px 0;
   background-color: var(--white-ish);
 }
-.dark_background{
-  background-color: var(--river);
+.dark_background {
+  background-color: var(--green-river);
   color: var(--white-ish);
-
 }
-.image_collection{
+.image_collection {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
 }
-.image_collection img{
+.image_collection img {
   width: 200px;
   margin: 10px;
 }
-.exhibition_navbar ul{
+.exhibition_navbar ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   list-style-type: none;
-
-  
 }
-.exhibition_navbar a{
+.exhibition_navbar a {
   font-size: 16px;
   padding: 5px;
-  color: var(--river);
+  color: var(--green-river);
   text-decoration: none;
 }
-.exhibition_navbar a:hover{
+.exhibition_navbar a:hover {
   color: var(--white-ish);
-  background-color: var(--river);
+  background-color: var(--green-river);
 }
 
 @media only screen and (min-width: 1024px) {
-  .exhibition_navbar a{
+  .exhibition_navbar a {
     font-size: 20px;
   }
   h2 {
     font-size: 4rem;
   }
-  .image_collection img{
+  .image_collection img {
     width: 400px;
     margin: 10px;
   }
-  }
+}
