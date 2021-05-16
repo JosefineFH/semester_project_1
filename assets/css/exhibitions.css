@@ -1,11 +1,11 @@
 .dark_background,
 .light_background {
   padding: 10px 0;
-  background-color: var(--white-ish);
 }
 .dark_background {
-  background-color: var(--green-river);
-  color: var(--white-ish);
+  background-color: var(--blue-river);
+  color: var(--light-green);
+  width: auto;
 }
 .image_collection {
   display: flex;
@@ -31,8 +31,8 @@
   text-decoration: none;
 }
 .exhibition_navbar a:hover {
-  color: var(--white-ish);
-  background-color: var(--green-river);
+  color: var(--light-green);
+  background-color: var(--blue-river);
 }
 
 @media only screen and (min-width: 1024px) {
