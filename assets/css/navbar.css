@@ -237,10 +237,13 @@ nav a:hover {
     background-size: cover;
     height: 12pc;
   }
-
+  .background_header h1 {
+    font-size: 50px;
+  }
   .header_text {
-    line-height: 5pc;
-    letter-spacing: -3px;
+    line-height: 8pc;
+    font-size: 80px;
+
   }
   label {
     display: none;
@@ -284,8 +287,10 @@ nav a:hover {
     height: 130px;
   }
   .header_text {
-    line-height: 40px;
-    letter-spacing: -3px;
+    line-height: 60px;
+  }
+  .background_header h1 {
+    font-size: 60px;
   }
   .logo_icon {
     height: auto;
