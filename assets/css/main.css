@@ -78,7 +78,9 @@ a:hover {
 h2, .info_section, .exhibition p{
   text-align: center;
 }
-
+.header_content{
+  max-width: none;
+}
 
 /* ----------------------------- Special Events ----------------------------- */
 .special_events {
@@ -370,6 +372,9 @@ input[type="submit"].contact {
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: 6rem;
+  }
+  p{
+    font-size: 25px;
   }
   form {
     width: 700px;
