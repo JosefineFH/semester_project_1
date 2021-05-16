@@ -83,7 +83,7 @@ appearance: none;
 }
 input[type="email"],
 input[type="text"],
-select {
+select, textarea {
   border: 2px var(--orange) solid;
   font-size: 16px;
 
@@ -95,7 +95,7 @@ select {
 }
 input[type="email"]:focus,
 input[type="text"]:focus,
-select:focus {
+select:focus, textarea:focus {
   border: 2px var(--blue-river) solid;
   outline-width: 0;
 }
