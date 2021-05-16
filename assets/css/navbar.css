@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.background_header h2{
+  margin: 0;
+}
 
 .header {
   background-color: var(--blue-river);
@@ -14,6 +17,7 @@
 .header_text {
   background-color: var(--blue-river);
   color: var(--light-green);
+  line-height: 25px;
 }
 .menu-items {
   display: inline-flex;
@@ -77,7 +81,6 @@ nav a:hover {
   position: absolute;
   right: 0%;
 }
-
 /* --------------------------- Exhibition section --------------------------- */
 
 .exhibitions {
@@ -207,14 +210,13 @@ nav a:hover {
 @media only screen and (min-width: 768px) {
   
   .header_text {
-    line-height: 2.7pc;
+    line-height: 35px;
     font-size: 60px;
-    letter-spacing: -4px;
   }
   .background_header {
     height: 8pc;
   }
-  .background_header h1 {
+  .background_header h2 {
     font-size: 50px;
   }
   .exhibitions {
@@ -237,12 +239,12 @@ nav a:hover {
     background-size: cover;
     height: 12pc;
   }
-  .background_header h1 {
+  .background_header h2 {
     font-size: 50px;
   }
   .header_text {
-    line-height: 8pc;
-    font-size: 80px;
+    line-height: 84px;
+    font-size: 130px;
 
   }
   label {
@@ -266,7 +268,6 @@ nav a:hover {
     color: var(--light-green);
     padding: 10px;
     font-size: 20px;
-    letter-spacing: 2px;
     border-left: var(--blue-river) 4px solid;
   }
 
@@ -286,11 +287,8 @@ nav a:hover {
     padding: 0 20px;
     height: 130px;
   }
-  .header_text {
-    line-height: 60px;
-  }
-  .background_header h1 {
-    font-size: 60px;
+  .background_header h2 {
+    font-size: 70px;
   }
   .logo_icon {
     height: auto;
