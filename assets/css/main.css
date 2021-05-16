@@ -36,7 +36,7 @@ p {
 .exhibition_navbar,
 .light_background,
 .dark_background p {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -85,7 +85,7 @@ a:hover {
 }
 
 .images {
-  width: 300px;
+  min-width: 300px;
   display: block;
   margin: 20px auto;
 }
@@ -97,6 +97,10 @@ a:hover {
 }
 .header_content {
   max-width: none;
+}
+.map_image{
+  min-width: 300px;
+  max-width: 900px;
 }
 
 /* ----------------------------- Special Events ----------------------------- */
@@ -249,9 +253,7 @@ a:hover {
   }
 
   .images {
-    width: 600px;
-    display: block;
-    margin: 20px auto;
+    max-width: 800px;
   }
 
   .senter_content {

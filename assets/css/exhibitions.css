@@ -37,6 +37,16 @@
   color: var(--light-green);
   background-color: var(--blue-river);
 }
+.exhibition_images{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+}
+.exhibition_images img{
+  margin: 0 20px
+}
 
 @media only screen and (min-width: 1024px) {
   .exhibition_navbar a {
@@ -49,4 +59,8 @@
     width: 400px;
     margin: 10px;
   }
+  .exhibition_images img{
+    max-width: 400px;
+  }
+  
 }

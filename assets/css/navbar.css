@@ -1,5 +1,8 @@
 .background_header {
-  background-image: url("/images/background_image.jpg");
+  background-image:linear-gradient(
+    rgba(238, 236, 236, 0.5),
+    rgba(202, 202, 202, 0.5)
+  ), url("/images/william-bout-264826.jpg");
   height: 6pc;
   background-size: cover;
   background-repeat: no-repeat;
@@ -91,57 +94,52 @@ nav a:hover {
 .container {
   cursor: pointer;
   display: block;
-  margin: 10px 10px;
+  margin: 10px 10px; 
 
-  width: 120px;
+  width: 130px;
   height: 120px;
-
+  text-align: center;
   position: relative;
   box-shadow: #00000059 0px 3px 6px;
   border-radius: 20px;
   background: linear-gradient(145deg, #ffffff, #e6e6e6);
 }
 .container img {
-  width: 50px;
+  width: 35px;
 }
-.container a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.6rem;
-  text-decoration: none;
-  text-align: center;
 
-  font-family: var(--Apex-bold);
-  font-weight: 900;
-}
 .image {
   display: block;
   width: 100%;
   height: auto;
 }
 .text {
-  font-size: 20px;
-  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; 
+
+  font-family: var(--Apex-bold);
+  font-size: 14px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} 
 
-.our_exhibitions a {
+.our_exhibitions {
   color: var(--orange);
 }
 .our_exhibitions:hover {
-  background-image: linear-gradient(
+    background-image: linear-gradient(
       rgba(238, 236, 236, 0.5),
       rgba(202, 202, 202, 0.5)
     ),
-    url("/images/building-images/hammerdalen-2.jpg");
+    url("/images/events/cosmology.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.cosmology a {
+.cosmology {
   color: #172a7d;
 }
 
@@ -155,7 +153,7 @@ nav a:hover {
   background-position: bottom;
 }
 
-.biology a {
+.biology {
   color: #21a366;
 }
 .biology:hover {
@@ -168,7 +166,7 @@ nav a:hover {
   background-position: bottom;
 }
 
-.robotics a {
+.robotics {
   color: #e13f5f;
 }
 .robotics:hover {
@@ -181,7 +179,7 @@ nav a:hover {
   background-position: bottom;
 }
 
-.ecology a {
+.ecology {
   color: #0455bf;
 }
 .ecology:hover {
@@ -194,7 +192,7 @@ nav a:hover {
   background-position: bottom;
 }
 
-.evolution a {
+.evolution {
   color: #9231be;
 }
 .evolution:hover {
@@ -226,14 +224,13 @@ nav a:hover {
     width: 200px;
     height: 150px;
   }
-  .container a {
+  .text{
     font-size: 18px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .background_header {
-    background-image: url("/images/background_image.jpg");
     height: 10pc;
     background-position: top;
     background-size: cover;
@@ -300,7 +297,6 @@ nav a:hover {
   }
 
   .background_header {
-    background-image: url("/images/background_image.jpg");
     background-attachment: fixed;
     background-size: cover;
     height: 12pc;
