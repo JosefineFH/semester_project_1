@@ -23,27 +23,35 @@
 
 body,
 html,
-h1, p {
+h1,
+p {
   padding: 0;
   margin: 0;
 }
 
-.exhibition, .info_section, .special_events, .suport_us, .exhibition_navbar, .light_background, .dark_background p{
+.exhibition,
+.info_section,
+.special_events,
+.suport_us,
+.exhibition_navbar,
+.light_background,
+.dark_background p {
   max-width: 1200px;
   margin: auto;
 }
 
-h3, h2, h1{
+h3,
+h2,
+h1 {
   text-align: center;
   color: var(--dark-river);
   font-family: var(--bebas-neuce), "Bebas Neue", sans-serif !important;
-  
 }
 h1,
 h2 {
   font-size: 40px;
 }
-h3{
+h3 {
   font-size: 35px;
 }
 p {
@@ -55,7 +63,7 @@ p {
 }
 
 a {
-  font-family: var(--montserrat), sans-serif ;
+  font-family: var(--montserrat), sans-serif;
   color: var(--dark-river);
   text-transform: uppercase;
   font-weight: bolder;
@@ -68,7 +76,7 @@ a:hover {
 .purple_text {
   color: var(--wisteria);
 }
-.orange_text{
+.orange_text {
   color: var(--orange);
 }
 
@@ -82,10 +90,12 @@ a:hover {
   margin: 20px auto;
 }
 
-.info_section, .exhibition p, .suport_us p{
+.info_section,
+.exhibition p,
+.suport_us p {
   text-align: center;
 }
-.header_content{
+.header_content {
   max-width: none;
 }
 
@@ -101,10 +111,9 @@ a:hover {
   flex-wrap: wrap;
 }
 
-
 .card {
   cursor: pointer;
-  background: linear-gradient( 145deg, #8e44ad 20%, #3498db);
+  background: linear-gradient(145deg, #8e44ad 20%, #3498db);
   margin: 10px;
   width: 300px;
 }
@@ -137,14 +146,13 @@ a:hover {
 
 /* --------------------------------- Buttons -------------------------------- */
 
-
 .content_button {
   margin: 30px 0;
 }
-.content_button{
+.content_button {
   padding: 15px 50px;
   border-radius: 50px;
-  background-image: linear-gradient( 145deg, #8e44ad 20%, #3498db);
+  background-image: linear-gradient(145deg, #8e44ad 20%, #3498db);
   box-shadow: #00000080 0 3px 6px;
 
   font-weight: 600;
@@ -158,13 +166,27 @@ a:hover {
   border-radius: 50px;
   background: var(--blue-river);
 }
-.content_button a{
+.content_button a {
   color: var(--light-green);
 }
 
-
-
 /* about_us.html */
+.visit_us{
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+.visit_info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.vist_address {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  margin: 30px;
+}
+
 .info p {
   color: var(--midnight-blue);
   padding: 0;
@@ -187,38 +209,35 @@ a:hover {
   width: 80%;
 }
 
-.info p{
+.info p {
   color: #2f4858;
 }
-.contact_us_form{
+.contact_us_form {
   padding-bottom: 30px;
 }
-
 
 /* get involved */
 .purple {
   background: var(--wisteria);
   max-width: 2000px;
 }
-.purple p, .purple h2 {
+.purple p,
+.purple h2 {
   color: var(--light-green);
 }
-.button{
-    text-align: center;
-    padding-bottom: 30px;
+.button {
+  text-align: center;
+  padding-bottom: 30px;
 }
-.purple_button{
-    background: var(--light-green);
-    padding: 20px 30px;
-    font-weight: bolder;
-    border-radius: 30px;
-    display:inline-block;
-    margin:0 auto;
-    text-align: center;
-
-    
+.purple_button {
+  background: var(--light-green);
+  padding: 20px 30px;
+  font-weight: bolder;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
 }
-
 
 /* media query tablet size 768px */
 @media screen and (min-width: 768px) {
@@ -241,20 +260,19 @@ a:hover {
     margin-left: auto;
   }
 
-.img_size{
-  width: 50%;
-}
-
+  .img_size {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   h2 {
-    font-size: 75px;
+    font-size: 60px;
   }
-  h3{
-    font-size: 70px;
+  h3 {
+    font-size: 55px;
   }
-  p{
+  p {
     font-size: 20px;
   }
   form {
@@ -263,11 +281,10 @@ a:hover {
   .header_text {
     line-height: unset;
   }
-  .purple p, .white_background p{
+  .purple p,
+  .white_background p {
     max-width: 1000px;
     display: block;
     margin: 0 auto;
+  }
 }
-}
-
-

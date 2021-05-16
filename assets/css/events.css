@@ -71,10 +71,11 @@ form {
   margin: auto;
   width: 300px;
 }
-label,
+.contact_us_form label, .event_form label,
 option,
 select,
 input {
+  display: inline;
   font-family: var(--montserrat);
   color: var(--dark-river);
   -webkit-appearance: none;
@@ -99,7 +100,9 @@ select:focus, textarea:focus {
   border: 2px var(--blue-river) solid;
   outline-width: 0;
 }
-
+.event_form label{
+  display: block;
+}
 input[type="submit"] {
   border: none;
   background-image: linear-gradient( 
@@ -111,7 +114,7 @@ input[type="submit"] {
   font-weight: bolder;
   border-radius: 30px;
 
-  margin-top: 15px;
+  margin: 30px 0;
   padding: 15px 20px;
 }
 input[type="submit"]:hover {

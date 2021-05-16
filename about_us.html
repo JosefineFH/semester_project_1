@@ -33,7 +33,7 @@
                 <input type="checkbox" id="hamburger-menu" />
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="/exhibitions.html">Exhibitions</a></li>
                         <li><a href="/events.html">Events</a></li>
                         <li><a href="/get_invovled.html">Get Involved</a></li>
@@ -47,27 +47,29 @@
         </div>
     </header>
 
-    <main class="main_section">
-        <section class="visit_us">
+    <main class="visit_us">
+        <section>
             <h2 class="orange_text">visit us</h2>
 
-            <div class="address">
-                <div class="contact_icon">
-                    <img src="/images/icons/maps.png" alt="map marker" />
+            <div class="visit_info">
+                <div class="vist_address">
+                    <div class="contact_icon">
+                        <img src="/images/icons/maps.png" alt="map marker" />
+                    </div>
+                    <div class="info">
+                        <p class="bolder">The Community Science Museum</p>
+                        <p>Nedre Fritzøegate 2</p>
+                        <p>3264 Larvik</p>
+                    </div>
                 </div>
-                <div class="info">
-                    <p class="bolder">The Community Science Museum</p>
-                    <p>Nedre Fritzøegate 2</p>
-                    <p>3264 Larvik</p>
-                </div>
-            </div>
-            <div class="address">
-                <div class="contact_icon">
-                    <img src="/images/icons/laptop-e-mail.png" alt="email" />
-                </div>
-                <div class="info">
-                    <p>Tlf: 999 99 999</p>
-                    <p>Email: science.museum@mail.com</p>
+                <div class="vist_address">
+                    <div class="contact_icon">
+                        <img src="/images/icons/laptop-e-mail.png" alt="email" />
+                    </div>
+                    <div class="info">
+                        <p>Tlf: 999 99 999</p>
+                        <p>Email: science.museum@mail.com</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -138,50 +140,43 @@
             </div>
 
             <div class="shop_info">
-                <div class="cafe_info">
                     <h2 class="orange_text">Food and Drink</h2>
                     <p>
                         There is a café attached to the museum where you can get light
                         lunches, soft drinks, coffee, snacks and more.
                     </p>
-                </div>
-                <div class="shop">
+
                     <h2 class="orange_text">shop</h2>
                     <p>
                         Our shop offers a range of memorabilia from the museum as well as
                         great gifts and activity packs that allow you to continue to
                         explore science even after you’ve left the museum.
                     </p>
-                </div>
             </div>
         </section>
         <section class="contact_us_form" id="contact_us_form">
             <h2 class="orange_text">Contact us if you have eny questions</h2>
 
             <form action="about_us.html">
-                <label for="name">Full Name</label>
+                <label for="name">Full Name:</label>
                 <input type="text" id="name" />
 
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
                 <input type="email" id="email"/>
 
-                <label for="events" >Select category for why you are contacting us</label>
+                <label for="events" >Select category for why you are contacting us:</label>
                 <select name="event" id="events">
-                    <option value="guided tour">Other about guided tours</option>
+                    <option value="guided tour">About guided tours</option>
                     <option value="events">Events</option>
                     <option value="questions kids">Questions from kids</option>
                     <option value="Questions teachers">Questions for teachers</option>
-                    <option value="Questions researchers">
-                        Questions for researchers
-                    </option>
+                    <option value="Questions researchers">Questions for researchers</option>
                     <option value="About exhibition">About our exhibitions</option>
-                    <option value="getting involved">
-                        Questions about getting involved
-                    </option>
+                    <option value="getting involved">Questions about getting involved</option>
                     <option value="Other question">Other questions</option>
                 </select>
 
-                <label for="events" >Select an event</label>
+                <label for="events" >Your message to us:</label>
                 <textarea name="message_us" id="message_us" cols="30" rows="10"></textarea>
 
                 <input class="button" type="submit" value="send"> 
