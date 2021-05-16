@@ -28,8 +28,8 @@ h1, p {
   margin: 0;
 }
 
-.exhibition, .info_section, .special_events, .suport_us, .exhibition_navbar, .light_background, .dark_background p{
-  max-width: 1000px;
+.exhibition, .info_section, .special_events, .suport_us, .exhibition_navbar, .light_background, .dark_background p, .events{
+  max-width: 1200px;
   display: block;
   margin: auto;
 }

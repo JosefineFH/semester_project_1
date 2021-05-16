@@ -4,8 +4,11 @@
 }
 .dark_background {
   background-color: var(--blue-river);
-  color: var(--light-green);
   width: auto;
+}
+.dark_background h2, .dark_background p{
+  color: var(--light-green);
+
 }
 .image_collection {
   display: flex;

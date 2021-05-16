@@ -22,21 +22,18 @@
     <header>
         <div class="header">
             <a href="/" class="logo">
-                <img class="logo_icon" src="/images/icons/atom.png" alt="Logo">
+                <img class="logo_icon" src="/images/icons/atom.png" alt="the science museum logo">
             </a>
 
 
             <div class="menu-items">
                 <label for="hamburger-menu">
-                    <img src="/images/icons/dropdown-menu.png" alt="dropdown menu" class="dropdown_icon">
+                    <img class="dropdown_icon" src="/images/icons/dropdown-menu.png" alt="dropdown menu">
                 </label>
                 <input type="checkbox" id="hamburger-menu">
                 <nav>
-                    <label for="hamburger-menu">
-                        <img src="/images/icons/close-dropdown-menu.png" alt="close menu" class="logo_icon right">
-                    </label>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="/exhibitions.html">Exhibitions</a></li>
                         <li><a href="/events.html">Events</a></li>
                         <li><a href="/get_invovled.html">Get Involved</a></li>
@@ -46,7 +43,8 @@
             </div>
         </div>
         <div>
-            <h1 class="header_text"> the Science Museum</h1>
+            <h1 class="header_text">
+                the Science Museum</h1>
         </div>
     </header>
 
@@ -55,7 +53,7 @@
             <h1>Special events</h1>
         </section>
         <section class="main_section">
-            <article class="event">
+            <div class="event">
                 <div class="content" id="professor_of_aeronautics">
                     <p class="date">06.06.21</p>
                     <h2>visit from Professor of Aeronautics - Sheila Widnall</h2>
@@ -63,19 +61,24 @@
                         Technology will be delivering 3 lectures on the development of aeronautics and where the future
                         lies
                         in this exciting ‘space’.</p>
-                    <p>There will be a number of available tickets so <a href="#book_event"> contact us here </a> for a
+                    <p>There will be a number of available tickets so
+                        <a href="#book_event">
+                            contact us here
+                        </a>
+                        for a
                         ticket and
                         to
                         get a
-                        good seat.</p>
+                        good seat.
+                    </p>
                     <p class="bold">Prize: 399,-</p>
                 </div>
                 <div class="image_content">
                     <img src="/images/events/spacex.png" alt="Space X rocket">
                 </div>
-            </article>
+            </div>
 
-            <article class="event" id="night_in_museum">
+            <div class="event" id="night_in_museum">
                 <div class="content">
                     <p class="date">12.07.21</p>
                     <h2>Night in the Museum</h2>
@@ -91,9 +94,9 @@
                 <div>
                     <img src="/images/events/hammerdalen_night_in_museum.jpg" alt="Space X rocket">
                 </div>
-            </article>
+            </div>
 
-            <article class="event" id="energetica_exhibition">
+            <div class="event" id="energetica_exhibition">
                 <div class="content">
                     <p class="date">02.08.21</p>
                     <h2>Energetica Exhibition on Loan</h2>
@@ -108,7 +111,7 @@
                 <div class="image_content">
                     <img src="/images/events/energetica_exhibition.png" alt="Space X rocket">
                 </div>
-            </article>
+            </div>
         </section>
         <section class="book_event" id="book_event">
             <h2>Contact us to book a spot at an event</h2>
@@ -121,7 +124,8 @@
 
                 <label for="events" class="event_form_label">select an event</label>
                 <select name="event" id="events">
-                    <option value="professor_of_aeronautics ">Visit from Professor of Aeronautics </option>
+                    <option value="professor_of_aeronautics ">Visit from Professor of Aeronautics
+                    </option>
                     <option value="night_in_museum" disabled>Night in the Museum</option>
                     <option value="energetica_exhibition">Energetica Exhibition on Loan</option>
                 </select>
@@ -132,29 +136,30 @@
     </main>
 
     <footer>
-        <section class="footer_logo">
-            <img lass="footer_logo" src="/images/science_museum_whitepng.png" alt="">
-        </section>
+        <div class="footer_logo">
+            <img src="/images/science_museum_whitepng.png" alt="">
+        </div>
 
-        <section class="links">
+        <div class="links">
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="/about_us.html">visit us</a></li>
-                <li><a href="/events.html">events</a></li>
-                <li><a href="/get_invovled.html">get involved</a></li>
-                <li><a href="/exhibitions.html">our exhibitions</a></li>
-                <li><a href="/about_us.html#contact_us_form">contact us</a></li>
+                <li><a class="link" href="index.html">home</a></li>
+                <li><a class="link" href="/about_us.html">visit us</a></li>
+                <li><a class="link" href="/events.html">events</a></li>
+                <li><a class="link" href="/get_invovled.html">get involved</a></li>
+                <li><a class="link" href="/exhibitions.html">our exhibitions</a></li>
+                <li><a class="link" href="/about_us.html#contact_us_form">contact us</a></li>
             </ul>
-        </section>
+        </div>
 
-        <section class="contact_info">
+        <div class="contact_info">
             <div class="address">
                 <div class="contact_icon">
                     <img src="/images/icons/maps.png" alt="">
                 </div>
                 <div class="contact_info">
                     <p class="bolder">The Science Museum</p>
-                    <p> Nedre Fritzøegate 2</p>
+                    <p>
+                        Nedre Fritzøegate 2</p>
                     <p>3264 Larvik</p>
                 </div>
             </div>
@@ -167,8 +172,7 @@
                     <p>Email: science.museum@mail.com</p>
                 </div>
             </div>
-        </section>
+        </div>
     </footer>
 </body>
-
 </html>
