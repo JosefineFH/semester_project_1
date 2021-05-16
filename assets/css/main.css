@@ -95,7 +95,7 @@ h2, .info_section, .exhibition p{
 }
 .card {
   cursor: pointer;
-  background-image: linear-gradient( 145deg, var(--wisteria) 20%, var(--blue-river) );
+  background-image: linear-gradient( 145deg, #8e44ad 20%, #3498db);
   margin: 10px;
   width: 300px;
 }
