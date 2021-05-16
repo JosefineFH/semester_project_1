@@ -28,9 +28,8 @@ h1, p {
   margin: 0;
 }
 
-.exhibition, .info_section, .special_events, .suport_us, .exhibition_navbar, .light_background, .dark_background p, .events{
+.exhibition, .info_section, .special_events, .suport_us, .exhibition_navbar, .light_background, .dark_background p{
   max-width: 1200px;
-  display: block;
   margin: auto;
 }
 
@@ -51,7 +50,8 @@ p {
   font-size: medium;
   font-family: var(--montserrat);
   color: var(--dark-river);
-  padding: 20px;
+  padding: 30px;
+  line-height: 25px;
 }
 
 a {
@@ -59,6 +59,7 @@ a {
   color: var(--dark-river);
   text-transform: uppercase;
   font-weight: bolder;
+  text-decoration: none;
 }
 a:hover {
   color: var(--orange);
@@ -130,31 +131,17 @@ a:hover {
 }
 
 /* --------------------------------- Buttons -------------------------------- */
-.purple_button {
-  color: var(--wisteria);
-  text-decoration: none;
 
-  padding: 15px 50px;
-  border-radius: 50px;
-  background: var(--white);
-  box-shadow: #00000080 0 3px 6px;
-
-  display: block;
-  margin: 30px auto 0;
-  width: fit-content;
-}
 
 .content_button {
   margin: 30px 0;
 }
-.content_button .button,
-input[type="submit"] {
+.content_button{
   padding: 15px 50px;
   border-radius: 50px;
   background-image: linear-gradient( 145deg, #8e44ad 20%, #3498db);
   box-shadow: #00000080 0 3px 6px;
 
-  color: var(--light-green);
   font-weight: 600;
   text-decoration: none;
 
@@ -162,104 +149,15 @@ input[type="submit"] {
   margin: 0 auto;
   width: fit-content;
 }
-.content_button .button:hover,
-input[type="submit"]:hover {
+.content_button:hover {
   border-radius: 50px;
   background: var(--blue-river);
 }
-
-/* ------------------------------- events.html ------------------------------ */
-.event {
-  /* padding: 20px 30px; */
-  justify-items: center;
-  display: grid;
-  grid-gap: 30px;
+.content_button a{
+  color: var(--light-green);
 }
 
-.date {
-  font-family: var(--bebas-neuce), "Bebas Neue", sans-serif !important;
-}
 
-.event h2,
-.book_event h2 {
-  text-align: start;
-  font-family: var(--bebas-neuce), "Bebas Neue", sans-serif !important;
-  color: var(--orange);
-  margin: 0;
-  letter-spacing: 2px;
-  margin: 0 30px;
-}
-
-.event img {
-  border-radius: 100%;
-  width: 250px;
-  height: 250px;
-  padding: 10px;
-}
-
-.event:nth-child(even) {
-  background-color: var(--sunflower);
-  width: 100%;
-}
-
-form {
-  display: grid;
-  width: 300px;
-  margin: auto;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  border: none;
-  border-bottom: 3px solid var(--sunflower);
-  height: 30px;
-  padding: 30px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  border: none;
-  border: solid var(--orange);
-  outline-width: 0;
-}
-
-.event_form_label {
-  display: block;
-  font-family: var(--bebas-neuce), "Bebas Neue", sans-serif !important;
-  color: var(--orange);
-}
-
-select {
-  height: 55px;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-input[type="submit"] {
-  border: none;
-}
-
-.bold {
-  font-weight: bolder;
-}
-
-.sold_out {
-  text-decoration: line-through;
-  padding: 0 10px;
-}
-
-.sold {
-  display: inline-flex;
-}
-
-.sold_out_text {
-  font-weight: bolder;
-  color: var(--orange);
-}
 
 /* ------------------------------ about_us.html ----------------------------- */
 .decore {
@@ -298,11 +196,6 @@ input[type="submit"] {
   width: 80%;
 }
 
-.book_event {
-  margin-top: 50px;
-  padding: 50px;
-  border-top: 3px ridge var(--orange);
-}
 
 input[type="submit"].contact {
   margin-top: 30px;
@@ -329,33 +222,6 @@ input[type="submit"].contact {
     margin-left: auto;
   }
 
-  .card {
-    width: 250px;
-    height: 350px;
-  }
-
-  .event {
-    grid-template-columns: 1fr 300px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .event:nth-child(even) {
-    grid-template-columns: 300px 1fr;
-  }
-
-  .content {
-    order: 1;
-    display: block;
-    margin: auto;
-  }
-
-  .image_content {
-    order: 2;
-  }
-  .img_size {
-    width: 50%;
-  }
 }
 
 @media screen and (min-width: 1024px) {

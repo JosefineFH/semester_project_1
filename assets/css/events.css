@@ -1,0 +1,165 @@
+.event {
+  justify-items: center;
+  display: grid;
+  padding: 30px 15px;
+  min-width: 300px;
+}
+.event p {
+  padding: 10px 10px 0 0;
+}
+
+.date {
+  font-family: var(--bebas-neuce), "Bebas Neue", sans-serif !important;
+  padding: 0;
+}
+
+.event h2 {
+  text-align: start;
+  color: var(--orange);
+  margin: 0;
+}
+
+.event img {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+}
+
+.event:nth-child(even) {
+  background-color: var(--sunflower);
+}
+
+.event_button {
+  display: block;
+  width: fit-content;
+  background: var(--orange);
+  color: var(--light-green);
+  border: none;
+  padding: 20px 30px;
+  margin-top: 10px;
+}
+.event_button:hover {
+  background: var(--sunflower);
+}
+
+.bold {
+  align-self: center;
+  font-weight: bolder;
+}
+.sold_out {
+  text-decoration: line-through;
+  padding: 0 10px;
+}
+
+.sold {
+  display: inline-flex;
+}
+
+.sold_out_text {
+  font-weight: bolder;
+  color: var(--orange);
+}
+
+/* form */
+.orange_color {
+  color: var(--orange);
+  padding: 0 15px;
+}
+form {
+  display: grid;
+  margin: auto;
+  width: 300px;
+}
+label,
+option,
+select,
+input {
+  font-family: var(--montserrat);
+  color: var(--dark-river);
+}
+input[type="email"],
+input[type="text"],
+select {
+  border: 2px var(--orange) solid;
+  font-size: 16px;
+
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+
+  box-sizing: border-box;
+}
+input[type="email"]:focus,
+input[type="text"]:focus,
+select:focus {
+  border: 2px var(--blue-river) solid;
+  outline-width: 0;
+}
+
+input[type="submit"] {
+  border: none;
+  background: var(--sunflower);
+  color: var(--dark-river);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+
+  margin-top: 15px;
+  padding: 15px 20px;
+}
+input[type="submit"]:hover {
+  background: var(--orange);
+  color: var(--light-green);
+}
+
+@media screen and (min-width: 768px) {
+  .event {
+    grid-template-columns: 1fr 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .event:nth-child(even) {
+    grid-template-columns: 300px 1fr;
+    padding: 0 30px 0 0;
+    padding-bottom: 20px;
+  }
+
+  .card {
+    width: 250px;
+    height: 350px;
+  }
+
+  .content {
+    order: 1;
+    display: block;
+    margin: auto;
+  }
+
+  form {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .orange_color {
+    font-size: 60px;
+  }
+  .event h2 {
+    font-size: 50px;
+  }
+  .event p {
+    font-size: 20px;
+  }
+  .book_event {
+    justify-content: center;
+  }
+  .event {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+  }
+  input[type="submit"]{
+    font-size: 20px;
+  }
+}
