@@ -151,7 +151,7 @@ a:hover {
   text-decoration: none;
 
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
   width: fit-content;
 }
 .content_button:hover {
@@ -240,11 +240,7 @@ a:hover {
     margin-right: auto;
     margin-left: auto;
   }
-  .card{
-    width: 600px;
-    display: block;
-    margin: 0 auto;
-}
+
 .img_size{
   width: 50%;
 }
@@ -253,13 +249,13 @@ a:hover {
 
 @media screen and (min-width: 1024px) {
   h2 {
-    font-size: 80px;
+    font-size: 75px;
   }
   h3{
     font-size: 70px;
   }
   p{
-    font-size: 25px;
+    font-size: 20px;
   }
   form {
     width: 700px;
