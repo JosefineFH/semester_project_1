@@ -50,7 +50,7 @@ p {
   font-size: medium;
   font-family: var(--montserrat);
   color: var(--dark-river);
-  padding: 30px;
+  padding: 20px;
   line-height: 25px;
 }
 
@@ -70,7 +70,7 @@ a:hover {
 }
 
 .white_text {
-  color: var(--white);
+  color: var(--light-green);
 }
 
 .images {
@@ -200,6 +200,12 @@ a:hover {
 input[type="submit"].contact {
   margin-top: 30px;
 }
+/* get involved */
+.get_involved section:nth-child(even) {
+  background-color: var(--wisteria);
+  width: 100%;
+}
+
 
 /* media query tablet size 768px */
 @media screen and (min-width: 768px) {

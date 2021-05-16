@@ -1,161 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Josefine Holth" />
+    <link rel="icon" href="/images/icons/atom.png" type="image/x-icon" />
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Josefine Holth">
-    <link rel="icon" href="/images/icons/atom.png" type="image/x-icon">
-
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/navbar.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
     <title>The Science Museum | Welcome to Science</title>
-</head>
-<style>
+  </head>
+  <style>
+    .purple {
+      background: var(--wisteria);
+    }
+    .purple p, .purple h2 {
+      color: var(--light-green);
+    }
+  </style>
 
-</style>
-
-<body>
+  <body>
     <header>
-        <div class="header">
-            <a href="/" class="logo">
-                <img class="logo_icon" src="/images/icons/atom.png" alt="Logo">
-            </a>
+      <div class="header">
+        <a href="/" class="logo">
+          <img
+            class="logo_icon"
+            src="/images/icons/atom.png"
+            alt="the science museum logo"
+          />
+        </a>
 
-
-            <div class="menu-items">
-                <label for="hamburger-menu">
-                    <img src="/images/icons/dropdown-menu.png" alt="dropdown menu" class="dropdown_icon">
-                </label>
-                <input type="checkbox" id="hamburger-menu">
-                <nav>
-                    <label for="hamburger-menu">
-                        <img src="/images/icons/close-dropdown-menu.png" alt="close menu" class="logo_icon right">
-                    </label>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="/exhibitions.html">Exhibitions</a></li>
-                        <li><a href="/events.html">Events</a></li>
-                        <li><a href="/get_invovled.html">Get Involved</a></li>
-                        <li><a href="/about_us.html">Visit Us</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="menu-items">
+          <label for="hamburger-menu">
+            <img
+              class="dropdown_icon"
+              src="/images/icons/dropdown-menu.png"
+              alt="dropdown menu"
+            />
+          </label>
+          <input type="checkbox" id="hamburger-menu" />
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="/exhibitions.html">Exhibitions</a></li>
+              <li><a href="/events.html">Events</a></li>
+              <li><a href="/get_invovled.html">Get Involved</a></li>
+              <li><a href="/about_us.html">Visit Us</a></li>
+            </ul>
+          </nav>
         </div>
-        <div>
-            <h1 class="header_text">
-                the Science Museum</h1>
-        </div>
+      </div>
+      <div>
+        <h1 class="header_text">the Science Museum</h1>
+      </div>
     </header>
-    <style>
-        .get_involved section:nth-child(even) {
-            background-color: var(--wisteria);
-            width: 100%;
-        }
-
-        .purple_button {
-            color: var(--wisteria);
-            text-decoration: none;
-
-
-            padding: 15px 50px;
-            border-radius: 50px;
-            background: var(--white);
-            box-shadow: #00000080 0px 3px 6px;
-
-            display: block;
-            margin: 0 auto;
-            margin-top: 30px;
-            width: fit-content;
-        }
-        .imges{
-            width: 100%;
-        }
-    </style>
 
     <main class="get_involved">
+      <h1 class="purple_text">Get Involved</h1>
+      <div class="purple">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit nam eum
+          deserunt iste tempora possimus voluptates inventore ea ipsum ipsam
+          vero doloribus quo eos quisquam perspiciatis rerum voluptate, sequi
+          sapiente.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit nam eum
+          deserunt iste tempora possimus voluptates inventore ea ipsum ipsam
+          vero doloribus quo eos quisquam perspiciatis rerum voluptate, sequi
+          sapiente.
+        </p>
+      </div>
+      <section>
+        <h2 class="purple_text">Support us</h2>
+        <p>
+          There are various ways you can support the museum. Donations are very
+          welcome and are an important way we keep this museum open and
+          accessible to the whole community.
+        </p>
+        <p>
+          You can also support us by donating items of interest to the museum’s
+          collections. If you have some item or collection that you think others
+          would enjoy, please let us know by contacting our Collections
+          Department and they will be able to assist you.
+        </p>
+        <img
+          class="card"
+          src="/images/building-images/hammerdalen-1.jpg"
+          alt="hammerdalen"
+        />
+      </section>
+      <section class="purple">
+        <h2>Contact us</h2>
 
-        <h1 class="purple_text">Get Involved</h1>
-        <section>
-            <p class="white_text">
-                Our p
-            </p>
-            <p class="white_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit nam eum deserunt iste tempora possimus voluptates inventore ea ipsum ipsam vero doloribus quo eos quisquam perspiciatis rerum voluptate, sequi sapiente.</p>
-        </section>
-        <section>
-            <h2 class="purple_text">Support us</h2>
-            <p>There are various ways you can support the museum. Donations are very welcome and are an important way we
-                keep this museum open and accessible to the whole community.</p>
-            <p>You can also support us by donating items of interest to the museum’s collections. If you have some item
-                or collection that you think others would enjoy, please let us know by contacting our Collections
-                Department and they will be able to assist you.</p>
-            <img class="imges" src="/images/building-images/hammerdalen-1.jpg" alt="hammerdalen">
-        </section>
-        <section>
-            <h2 class="white_text">Contact us</h2>
-
-            <p class="white_text">A number of people volunteer their time and effort to keep the displays in good order
-                and ready for visitors to come and enjoy. Volunteering has its perks including getting to see behind the
-                scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and
-                volunteers come together to discuss ideas for future exhibits and strategies for the museum. </p>
-            <p class="white_text">You can help volunteer in a number of different spheres. Please contact us if you’d
-                like to find out more about how you can get involved.</p>
-
-        </section>
-        <section>
-            <h2 class="purple_text">internships</h2>
-            <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of
-                nature with people? Well you could be just the right person to enjoy an internship at the museum. </p>
-            <p>You’ll be learning from a number of different academics and people who are passionate about science and
-                sharing it with the wider community.</p>
-        </section>
-        <section class="purple_button_section">
-            <h2 class="white_text">Contact us</h2>
-            <p class="white_text">If you wont to contact us about been a intern or if you wont to support us in some kinda way or just volunteer just contact us in this contact form.</p>
-            <a class="purple_button" href="/about_us.html#contact_us_form">Contact us</a>
-        </section>
+        <p>
+          A number of people volunteer their time and effort to keep the
+          displays in good order and ready for visitors to come and enjoy.
+          Volunteering has its perks including getting to see behind the scenes
+          of a working museum, access to staff-only lectures, and a monthly
+          lunch where all staff and volunteers come together to discuss ideas
+          for future exhibits and strategies for the museum.
+        </p>
+        <p>
+          You can help volunteer in a number of different spheres. Please
+          contact us if you’d like to find out more about how you can get
+          involved.
+        </p>
+      </section>
+      <section>
+        <h2 class="purple_text">internships</h2>
+        <p>
+          Are you interested in working in a museum? Do you enjoy the fun and
+          excitement of sharing the wonders of nature with people? Well you
+          could be just the right person to enjoy an internship at the museum.
+        </p>
+        <p>
+          You’ll be learning from a number of different academics and people who
+          are passionate about science and sharing it with the wider community.
+        </p>
+      </section>
+      <section class="purple">
+        <h2>Contact us</h2>
+        <p>
+          If you wont to contact us about been a intern or if you wont to
+          support us in some kinda way or just volunteer just contact us in this
+          contact form.
+        </p>
+        <a class="purple_button" href="/about_us.html#contact_us_form"
+          >Contact us</a
+        >
+      </section>
     </main>
     <footer>
-        <section class="footer_logo">
-            <img lass="footer_logo" src="/images/science_museum_whitepng.png" alt="">
-        </section>
+      <div class="footer_logo">
+        <img src="/images/science_museum_whitepng.png" alt="" />
+      </div>
 
-        <section class="links">
-            <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">visit us</a></li>
-                <li><a href="">events</a></li>
-                <li><a href="">get involved</a></li>
-                <li><a href="">our exhibitions</a></li>
-            </ul>
-        </section>
+      <div class="links">
+        <ul>
+          <li><a class="link" href="index.html">home</a></li>
+          <li><a class="link" href="/about_us.html">visit us</a></li>
+          <li><a class="link" href="/events.html">events</a></li>
+          <li><a class="link" href="/get_invovled.html">get involved</a></li>
+          <li><a class="link" href="/exhibitions.html">our exhibitions</a></li>
+          <li>
+            <a class="link" href="/about_us.html#contact_us_form">contact us</a>
+          </li>
+        </ul>
+      </div>
 
-        <section class="contact_info">
-            <div class="address">
-                <div class="contact_icon">
-                    <img src="/images/icons/maps.png" alt="">
-                </div>
-                <div class="contact_info">
-                    <p>The Community Science Museum</p>
-                    <p> Nedre Fritzøegate 2</p>
-                    <p>3264 Larvik</p>
-                </div>
-            </div>
-            <div class="address">
-                <div class="contact_icon">
-                    <img src="/images/icons/laptop-e-mail.png" alt="">
-                </div>
-                <div class="contact_info">
-                    <p>Tlf: 999 99 999</p>
-                    <p>Email: science.museum@mail.com</p>
-                </div>
-            </div>
-        </section>
+      <div class="contact_info">
+        <div class="address">
+          <div class="contact_icon">
+            <img src="/images/icons/maps.png" alt="" />
+          </div>
+          <div class="contact_info">
+            <p class="bolder">The Science Museum</p>
+            <p>Nedre Fritzøegate 2</p>
+            <p>3264 Larvik</p>
+          </div>
+        </div>
+        <div class="address">
+          <div class="contact_icon">
+            <img src="/images/icons/laptop-e-mail.png" alt="" />
+          </div>
+          <div class="contact_info">
+            <p>Tlf: 999 99 999</p>
+            <p>Email: science.museum@mail.com</p>
+          </div>
+        </div>
+      </div>
     </footer>
-
+  </body>
 </html>
