@@ -11,11 +11,11 @@
   --montserrat: "Montserrat", sans-serif;
 
   /* color */
-  --blue-river: #3498db;
+  --blue-river: #025A83;
 
   --sunflower: #f1c40f;
   --dark-river: #2f4858;
-  --light-green: #f0fcf7;
+  --light-green: #fff;
 
   --wisteria: #8e44ad;
   --orange: #ee4540;
@@ -117,7 +117,7 @@ a:hover {
 
 .card {
   cursor: pointer;
-  background: linear-gradient(145deg, #8e44ad 20%, #3498db);
+  background: linear-gradient(145deg, #8e44ad 20%, #025A83);
   margin: 10px;
   width: 300px;
 }
@@ -156,7 +156,7 @@ a:hover {
 .content_button {
   padding: 15px 50px;
   border-radius: 50px;
-  background-image: linear-gradient(145deg, #8e44ad 20%, #3498db);
+  background-image: linear-gradient(145deg, #8e44ad 20%, #025A83);
   box-shadow: #00000080 0 3px 6px;
 
   font-weight: 600;
