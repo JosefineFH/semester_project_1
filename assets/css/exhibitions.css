@@ -30,7 +30,13 @@
 .exhibition_navbar a {
   font-size: 16px;
   padding: 5px;
-  color: var(--green-river);
+  color: var(--blue-river);
+  text-decoration: none;
+}
+.exhibition_navbar a::after {
+  font-size: 16px;
+  padding: 5px;
+  color: var(--blue-river);
   text-decoration: none;
 }
 .exhibition_navbar a:hover {

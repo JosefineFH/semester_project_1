@@ -11,7 +11,7 @@
   --montserrat: "Montserrat", sans-serif;
 
   /* color */
-  --blue-river: #025A83;
+  --blue-river: #2351AF;
 
   --sunflower: #f1c40f;
   --dark-river: #2f4858;
@@ -64,12 +64,12 @@ p {
 
 a {
   font-family: var(--montserrat), sans-serif;
-  color: var(--dark-river);
+  color: var(--orange);
   text-transform: uppercase;
   font-weight: bolder;
 }
 a:hover {
-  color: var(--orange);
+  color: var(--blue-river);
 }
 
 .purple_text {
@@ -232,15 +232,7 @@ a:hover {
   text-align: center;
   padding-bottom: 30px;
 }
-.purple_button {
-  background: var(--light-green);
-  padding: 20px 30px;
-  font-weight: bolder;
-  border-radius: 30px;
-  display: inline-block;
-  margin: 0 auto;
-  text-align: center;
-}
+
 
 /* media query tablet size 768px */
 @media screen and (min-width: 768px) {

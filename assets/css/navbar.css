@@ -70,14 +70,14 @@ nav ul {
 nav li {
   margin: 30px 0;
 }
-nav a {
+.menu_link {
   font-family: var(--montserrat), sans-serif !important;
   color: var(--light-green);
   text-decoration: none;
-  font-size: 40px;
+  font-size: 35px;
 }
-nav a:hover {
-  color: var(--light-river);
+.menu_link:hover {
+  color: var(--sunflower);
 }
 
 .right {
@@ -259,20 +259,19 @@ nav a:hover {
     padding: 0px;
   }
   nav ul {
-    margin: 0;
+    margin: 30px;
   }
-  nav a {
+  .menu_link {
     color: var(--light-green);
     padding: 10px;
     font-size: 20px;
     border-left: var(--blue-river) 4px solid;
   }
 
-  nav a:hover {
+  .menu_link:hover {
     border-left: var(--white) 4px solid;
     background-color: #f7efe777;
   }
-
   .header {
     height: 100px;
     padding: 0 10px;
