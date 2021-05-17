@@ -171,6 +171,7 @@ a:hover {
 }
 .content_button a {
   color: var(--light-green);
+  text-decoration: none;
 }
 
 /* about_us.html */
