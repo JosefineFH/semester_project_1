@@ -98,8 +98,7 @@ a:hover {
   max-width: none;
 }
 .map_image{
-  min-width: 300px;
-  max-width: 900px;
+  width: 70%;
 }
 
 /* ----------------------------- Special Events ----------------------------- */
