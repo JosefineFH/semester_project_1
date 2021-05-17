@@ -99,6 +99,7 @@ a:hover {
 }
 .map_image {
   max-width: 100%;
+  align-self: flex-start;
 }
 
 /* ----------------------------- Special Events ----------------------------- */
