@@ -97,8 +97,8 @@ a:hover {
 .header_content {
   max-width: none;
 }
-.map_image{
-  width: 70%;
+.map_image {
+  max-width: 100%;
 }
 
 /* ----------------------------- Special Events ----------------------------- */
