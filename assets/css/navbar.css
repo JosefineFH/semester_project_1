@@ -125,7 +125,10 @@ nav li {
   left: 50%;
   transform: translate(-50%, -50%);
 } 
+.header_text_shadow{
 
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
 .our_exhibitions {
   color: var(--orange);
 }
@@ -139,7 +142,7 @@ nav li {
   background-position: center;
 }
 
-.cosmology {
+.cosmology, .cosmology_text {
   color: #172a7d;
 }
 
@@ -153,7 +156,7 @@ nav li {
   background-position: bottom;
 }
 
-.biology {
+.biology, .biology_text {
   color: #21a366;
 }
 .biology:hover {
@@ -166,7 +169,7 @@ nav li {
   background-position: bottom;
 }
 
-.robotics {
+.robotics, .robotics_text {
   color: #e13f5f;
 }
 .robotics:hover {
@@ -179,7 +182,7 @@ nav li {
   background-position: bottom;
 }
 
-.ecology {
+.ecology, .ecology_text {
   color: #0455bf;
 }
 .ecology:hover {
@@ -192,7 +195,7 @@ nav li {
   background-position: bottom;
 }
 
-.evolution {
+.evolution, .evolution_text {
   color: #9231be;
 }
 .evolution:hover {

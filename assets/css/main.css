@@ -262,9 +262,13 @@ a:hover {
 @media screen and (min-width: 1024px) {
   h2 {
     font-size: 60px;
+    margin: 0;
+    margin-top: 10px;
   }
   h3 {
     font-size: 55px;
+    margin: 0;
+    margin-top: 10px;
   }
   p {
     font-size: 20px;
