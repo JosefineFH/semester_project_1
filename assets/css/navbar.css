@@ -2,7 +2,7 @@
   background-image:linear-gradient(
     rgba(238, 236, 236, 0.5),
     rgba(202, 202, 202, 0.5)
-  ), url("/images/william-bout-264826.jpg");
+  ), url("/assets/images/william-bout-264826.jpg");
   height: 6pc;
   background-size: cover;
   background-repeat: no-repeat;
@@ -138,9 +138,9 @@ nav li {
       rgba(238, 236, 236, 0.5),
       rgba(202, 202, 202, 0.5)
     ),
-    url("/images/events/cosmology.jpg");
+    url("/assets/images/events/cosmology.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 .cosmology, .cosmology_text {
@@ -152,7 +152,7 @@ nav li {
       rgba(238, 236, 236, 0.5),
       rgba(202, 202, 202, 0.5)
     ),
-    url("/images/events/cosmology.jpg");
+    url("/assets/images/events/cosmology.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -165,7 +165,7 @@ nav li {
       rgba(238, 236, 236, 0.5),
       rgba(202, 202, 202, 0.5)
     ),
-    url("/images/events/biology.jpg");
+    url("/assets/images/events/biology.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -178,9 +178,9 @@ nav li {
       rgba(238, 236, 236, 0.5),
       rgba(202, 202, 202, 0.5)
     ),
-    url("/images/events/robotics.jpg");
+    url("/assets/images/events/robotics.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
 .ecology, .ecology_text {
@@ -191,7 +191,7 @@ nav li {
       rgba(238, 236, 236, 0.5),
       rgba(202, 202, 202, 0.5)
     ),
-    url("/images/events/ecology.jpg");
+    url("/assets/images/events/ecology.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -204,7 +204,7 @@ nav li {
       rgba(238, 236, 236, 0.5),
       rgba(202, 202, 202, 0.5)
     ),
-    url("/images/events/evolution.jpg");
+    url("/assets/images/events/evolution.jpg");
   background-size: cover;
   background-position: bottom;
 }
