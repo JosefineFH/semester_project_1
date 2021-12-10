@@ -1,16 +1,7 @@
-.background_header {
-  background-image:linear-gradient(
-    rgba(238, 236, 236, 0.5),
-    rgba(202, 202, 202, 0.5)
-  ), url("/assets/images/william-bout-264826.jpg");
-  height: 6pc;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-.background_header h2{
+
+.info_background h2{
   margin: 0;
+  color: #fff;
 }
 
 .header {
@@ -215,12 +206,6 @@ nav li {
     line-height: 35px;
     font-size: 60px;
   }
-  .background_header {
-    height: 8pc;
-  }
-  .background_header h2 {
-    font-size: 50px;
-  }
   .exhibitions {
     grid-gap: 20px;
   }
@@ -234,15 +219,6 @@ nav li {
 }
 
 @media only screen and (min-width: 1024px) {
-  .background_header {
-    height: 10pc;
-    background-position: top;
-    background-size: cover;
-    height: 12pc;
-  }
-  .background_header h2 {
-    font-size: 50px;
-  }
   .header_text {
     line-height: 63px;
     font-size: 100px;
@@ -280,28 +256,8 @@ nav li {
     height: 100px;
     padding: 0 10px;
   }
-}
-
-@media only screen and (min-width: 1440px) {
-  .header {
-    padding: 0 20px;
-    height: 130px;
-  }
-  .background_header h2 {
-    font-size: 70px;
-  }
-  .logo_icon {
-    height: auto;
-    width: 90px;
-  }
   .exhibitions {
     display: grid;
     grid-template-columns: 250px 250px 250px;
-  }
-
-  .background_header {
-    background-attachment: fixed;
-    background-size: cover;
-    height: 12pc;
   }
 }

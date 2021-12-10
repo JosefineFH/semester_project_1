@@ -1,0 +1,126 @@
+.specific_event_content{
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+.specific_event_header_text h1 {
+    margin-top: 30px;
+}
+.specific_event_content p {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.image_gallery .alignnone{
+    padding: 10px;
+    margin: 0;
+}
+.specific_event_content img{
+    display: block;
+    margin: 50px auto;
+    width: 100%;
+}
+.date p{
+    margin: unset;
+    padding: unset !important;
+    font-weight: bolder;
+    text-align: center;
+}
+.date{
+    margin: 40px;
+}
+.price_book {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* form */
+.orange_color {
+    color: var(--orange);
+    padding: 0 15px;
+  }
+  form {
+    display: grid;
+    margin: auto;
+    width: 300px;
+  }
+  .contact_us_form label, .event_form label,
+  option,
+  select,
+  input {
+    display: inline;
+    font-family: var(--montserrat);
+    color: var(--dark-river);
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  }
+  input[type="email"],
+  input[type="text"],
+  select, textarea {
+    border: 2px var(--orange) solid;
+    font-size: 16px;
+  
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+  
+    box-sizing: border-box;
+  }
+  input[type="email"]:focus,
+  input[type="text"]:focus,
+  select:focus, textarea:focus {
+    border: 2px var(--blue-river) solid;
+    outline-width: 0;
+  }
+  .event_form label{
+    display: block;
+  }
+  input[type="submit"] {
+    border: none;
+    background-image: linear-gradient( 
+  145deg
+  , #f1c40f 20%, #ee4540);
+    color: var(--light-green);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 30px;
+  
+    margin: 30px 0;
+    padding: 15px 20px;
+  }
+  input[type="submit"]:hover {
+    background: var(--orange);
+    color: var(--light-green);
+  }
+
+@media only screen and (min-width: 768px) {
+    .specific_event_content{
+        width: 700px;
+
+    }
+    .image_gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .image_gallery .alignnone{
+        width: unset;
+    }
+    form {
+        width: 700px;
+      }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .book_event {
+      justify-content: center;
+    }
+    input[type="submit"]{
+      font-size: 20px;
+    }
+  }
+  
+  

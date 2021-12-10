@@ -37,7 +37,7 @@
   color: var(--light-green);
   border: none;
   padding: 20px 30px;
-  margin-top: 10px;
+  margin: 10px auto;
 }
 .event_button:hover {
   background: var(--sunflower);
@@ -60,79 +60,23 @@
   font-weight: bolder;
   color: var(--orange);
 }
-
-/* form */
-.orange_color {
-  color: var(--orange);
-  padding: 0 15px;
-}
-form {
-  display: grid;
-  margin: auto;
+#professor_of_aeronautics, .image_content{
   width: 300px;
 }
-.contact_us_form label, .event_form label,
-option,
-select,
-input {
-  display: inline;
-  font-family: var(--montserrat);
-  color: var(--dark-river);
-  -webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
+#professor_of_aeronautics h2, p, a{
+  text-align: center;
 }
-input[type="email"],
-input[type="text"],
-select, textarea {
-  border: 2px var(--orange) solid;
-  font-size: 16px;
-
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-
-  box-sizing: border-box;
-}
-input[type="email"]:focus,
-input[type="text"]:focus,
-select:focus, textarea:focus {
-  border: 2px var(--blue-river) solid;
-  outline-width: 0;
-}
-.event_form label{
+.image_content img{
+  margin: auto;
   display: block;
 }
-input[type="submit"] {
-  border: none;
-  background-image: linear-gradient( 
-145deg
-, #f1c40f 20%, #ee4540);
-  color: var(--light-green);
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: bolder;
-  border-radius: 30px;
 
-  margin: 30px 0;
-  padding: 15px 20px;
-}
-input[type="submit"]:hover {
-  background: var(--orange);
-  color: var(--light-green);
-}
 
 @media screen and (min-width: 768px) {
   .event {
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 500px 200px;
     justify-content: center;
     align-items: center;
-  }
-
-  .event:nth-child(even) {
-    grid-template-columns: 300px 1fr;
-    padding: 0 30px 0 0;
-    padding-bottom: 20px;
   }
 
   .card {
@@ -145,12 +89,13 @@ input[type="submit"]:hover {
     display: block;
     margin: auto;
   }
-
-  form {
-    width: 700px;
-  }
 }
 @media screen and (min-width: 1024px) {
+  .event {
+    grid-template-columns: 700px 300px;
+    justify-content: center;
+    align-items: center;
+  }
   .orange_color {
     font-size: 60px;
   }
@@ -158,17 +103,6 @@ input[type="submit"]:hover {
     font-size: 50px;
   }
   .event p {
-    font-size: 20px;
-  }
-  .book_event {
-    justify-content: center;
-  }
-  .event {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 30px;
-  }
-  input[type="submit"]{
     font-size: 20px;
   }
 }

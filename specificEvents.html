@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="This is our upcoming event at the science museum this summer">
-    <meta name="keywords"
-        content="science, museum, larvik, events, energetica exhibition, NEMO Science, night in the museum, professor of aeronatutics ">
+    <meta name="description" content="Welcome to you local science museum where you can experience science up closed">
+    <meta name="keywords" content="">
     <meta name="author" content="Josefine Holth">
     <link rel="icon" href="/assets/images/icons/atom.png" type="image/x-icon">
 
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/navbar.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/specificEvent.css">
     <link rel="stylesheet" href="/assets/css/events.css">
-    <title>The Science Museum | Our events</title>
+    <title>The Science Museum | Welcome to Science</title>
 </head>
-
 <body>
     <header>
         <div class="header">
@@ -29,7 +27,7 @@
 
             <div class="menu-items">
                 <label for="hamburger-menu">
-                    <img class="dropdown_icon" src="/assets/images/icons/dropdown-menu.png" alt="dropdown menu">
+                    <img class="dropdown_icon"  src="/assets/images/icons/dropdown-menu.png" alt="dropdown menu" >
                 </label>
                 <input type="checkbox" id="hamburger-menu">
                 <nav>
@@ -43,25 +41,44 @@
                 </nav>
             </div>
         </div>
-        <div>
-            <h1 class="header_text">
-                the Science Museum</h1>
-        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Special events</h2>
-        </section>
-        <section>
-            <div class="event">
+        <div style="text-align: center; padding: 20px 0;">
+            <a href="/events.html"> &#x2190; Back</a>
+        </div>
+        <div class="specific_event_header_text">
+        </div>
+        <div class="specific_event_content">
+        </div>
+        <section id="book_event">
+            <h2 class="orange_color">Contact us to book a spot at an event</h2>
+
+            <div class="event_form">
+                <form action="events.html">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="events">Select an event</label>
+                    <select name="event" id="events">
+                        <option value="professor_of_aeronautics ">Visit from Professor of Aeronautics</option>
+                        <option value="night_in_museum" disabled>Night in the Museum</option>
+                        <option value="energetica_exhibition">Energetica Exhibition on Loan</option>
+                    </select>
+
+                    <input class="button" type="submit" value="send">
+
+                </form>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="footer_logo">
-            <img src="/assets/images/science_museum_whitepng.png" alt="science museum logo">
+            <img src="/assets/images/science_museum_whitepng.png" alt="">
         </div>
 
         <div class="links">
@@ -78,7 +95,7 @@
         <div class="contact_info">
             <div class="address">
                 <div class="contact_icon">
-                    <img src="/assets/images/icons/maps.png" alt="map point icon">
+                    <img src="/assets/images/icons/maps.png" alt="">
                 </div>
                 <div class="contact_info">
                     <p class="bolder">The Science Museum</p>
@@ -89,7 +106,7 @@
             </div>
             <div class="address">
                 <div class="contact_icon">
-                    <img src="/assets/images/icons/laptop-e-mail.png" alt="email icon">
+                    <img src="/assets/images/icons/laptop-e-mail.png" alt="">
                 </div>
                 <div class="contact_info">
                     <p>Tlf: 999 99 999</p>
@@ -98,8 +115,6 @@
             </div>
         </div>
     </footer>
-
 </body>
-<script src="js/eventPage.js"></script>
-
+<script src="js/specificEvent.js"></script>
 </html>
