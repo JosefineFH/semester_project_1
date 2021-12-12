@@ -1,52 +1,25 @@
 footer {
   background-color: var(--blue-river);
-  display: grid;
+  display: flex;
   padding-bottom: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.bolder {
-  font-weight: bolder;
-}
-.footer_logo {
-  justify-self: center;
-}
+
 .footer_logo img {
   max-width: 200px;
 }
-
-.contact_info {
-  display: grid;
-}
-
-.address {
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  margin: 30px;
-}
-
-.contact_icon {
-  align-self: center;
-  padding-right: 10px;
-}
-.contact_icon img {
-  width: 50px;
-}
-
-.contact_info p {
-  color: var(--light-green);
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-}
-
 footer ul {
   list-style-type: none;
   text-align: center;
   padding: 0;
 }
-footer li{
+footer li {
   margin-top: 10px;
 }
-.link{
+.link {
   color: var(--light-green);
   font-size: 15px;
   letter-spacing: 2px;
@@ -59,57 +32,40 @@ footer li{
   padding: 10px;
 }
 
+.address {
+  display: flex;
+  margin: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.contact_info p {
+  padding: unset;
+  color: white;
+}
+.contact_info {
+  width: 200px;
+}
 
 @media only screen and (min-width: 768px) {
-  footer {
-    grid-template-columns: 1fr 1fr;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .footer_logo {
-    order: 1;
-    align-self: center;
-  }
-  .links {
-    order: 0;
-    grid-column: 1 / 4;
-    margin: 30px 0;
-    
-    display: inline-grid;
-    
-    text-align: center;
-  }
-  .links ul {
-    padding: 0;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .links a {
-    padding: 0 30px;
-  }
+  .address {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
   .contact_info {
-    order: 1;
+    margin: 0 30px;
+    width: 500px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
+  p.bolder, .contact_info p {
+    width: unset;
+  }
   footer {
-    justify-content: center;
-    grid-template-columns: 200px 200px 400px;
+    background-color: var(--blue-river);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .footer_logo {
-    order: 0;
-  }
-  .links {
-    grid-column: 2;
-  }
-  .links a {
-    padding: 0 10px;
-  }
-  .links ul {
-display: block;
-    flex-wrap: nowrap;
-
-}
 }

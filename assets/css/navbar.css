@@ -8,6 +8,7 @@
   background-color: var(--blue-river);
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 .header_text {
   background-color: var(--blue-river);
@@ -245,7 +246,6 @@ nav li {
     color: var(--light-green);
     padding: 10px;
     font-size: 20px;
-    border-left: var(--blue-river) 4px solid;
   }
 
   .menu_link:hover {

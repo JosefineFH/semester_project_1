@@ -1,0 +1,130 @@
+@import url("/assets/css/navbar.css");
+/* @import url('/assets/css/footer.css'); */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+
+@font-face {
+  font-family: "Apex 2 - Bold";
+  src: url("/assets/fonts/ApexMk2-BoldExtended.otf") format("opentype");
+}
+:root {
+  /* fonts */
+  --bebas-neuce: "Bebas Neue", sans-serif;
+  --Apex-bold: "Apex 2 - Bold", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+
+  /* color */
+  --blue-river: #07132d;
+
+  --sunflower: #f1c40f;
+  --dark-river: #2f4858;
+  --light-green: #fff;
+
+  --wisteria: #8e44ad;
+  --orange: #ee4540;
+}
+body,
+html {
+  height: 100%;
+}
+
+body,
+html,
+h1,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* img,
+p {
+  width: 200px;
+} */
+h3,
+h2,
+h1 {
+  text-align: center;
+  color: var(--dark-river);
+  font-family: var(--bebas-neuce), "Bebas Neue", sans-serif !important;
+}
+h1,
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 35px;
+}
+p {
+  font-size: medium;
+  font-family: var(--montserrat);
+  color: var(--dark-river);
+  padding: 20px;
+  line-height: 25px;
+}
+
+a {
+  font-family: var(--montserrat), sans-serif;
+  color: var(--orange);
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+a:hover {
+  color: var(--blue-river);
+}
+.purple_text {
+    color: var(--wisteria);
+  }
+  .orange_text {
+    color: var(--orange);
+  }
+  
+  .white_text {
+    color: var(--light-green);
+  }
+  .images {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 20px 0;
+  }
+  .exhibition p,
+  .suport_us p {
+    text-align: center;
+  }
+.exhibition {
+  display: none;
+}
+
+/* ------------------------------ info section ------------------------------ */
+/* .info_background h2 {
+  margin: 0;
+  color: #fff;
+} */
+.header_text {
+  text-align: center;
+  background-color: var(--blue-river);
+  color: var(--light-green);
+  line-height: 25px;
+}
+.info_background{
+    background-image: url('https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_960_720.jpg');
+     min-height: 490px; 
+    background-attachment: scroll;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);  */
+  
+    border: solid red 4px;
+  
+  }
+.info_section{
+    width:90%;
+    background-color: #fff;
+  } 
