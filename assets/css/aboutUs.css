@@ -1,0 +1,32 @@
+@import url('/assets/css/components/form.css');
+.visit_info {
+  display: flex;
+}
+.contact_icon img{
+    display: block;
+    margin: auto;
+}
+.visit_us p, .visit_us h2 {
+    padding: 5px 10px;
+    width: unset;
+}
+.visit_us h2 {
+    margin: 10px 15px;
+}
+
+@media screen and (min-width: 1024px) {
+    .visit_info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .visit_us p, .visit_us h2 {
+        padding: 5px 10px;
+        width: 900px;
+        margin: auto;
+    }
+    .info p, p.bold {
+        width: unset;
+    }
+}

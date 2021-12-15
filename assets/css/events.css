@@ -1,11 +1,11 @@
 .event {
-  justify-items: center;
-  display: grid;
-  padding: 30px 15px;
-  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .event p {
   padding: 10px 10px 0 0;
+  width: unset;
 }
 
 .date {
@@ -14,9 +14,10 @@
 }
 
 .event h2 {
-  text-align: start;
+  text-align: center;
   color: var(--orange);
   margin: 0;
+  padding: 20px 10px;
 }
 
 .event img {
@@ -24,6 +25,8 @@
   width: 250px;
   height: 250px;
   padding: 10px;
+  display: block;
+  margin: auto;
 }
 
 .event:nth-child(even) {
@@ -60,26 +63,26 @@
   font-weight: bolder;
   color: var(--orange);
 }
-#professor_of_aeronautics, .image_content{
-  width: 300px;
-}
-#professor_of_aeronautics h2, p, a{
+.description{
   text-align: center;
+  padding: 0px 20px;
 }
-.image_content img{
-  margin: auto;
-  display: block;
-}
+
 
 
 @media screen and (min-width: 768px) {
-  .event {
-    grid-template-columns: 500px 200px;
-    justify-content: center;
-    align-items: center;
+  .image_content, .description,.event h2, .event p{
+    width: 700px;
+    margin: 0;
+    padding: 10px;
   }
+  .image_content {
+    width: 700px;
+    display: block;
+    margin: auto;
+}
 
-  .card {
+  /* .card {
     width: 250px;
     height: 350px;
   }
@@ -88,15 +91,14 @@
     order: 1;
     display: block;
     margin: auto;
-  }
+  } */
 }
 @media screen and (min-width: 1024px) {
-  .event {
-    grid-template-columns: 700px 300px;
-    justify-content: center;
-    align-items: center;
+  h2{
+    font-size: 45px;
   }
-  .orange_color {
+
+  /* .orange_color {
     font-size: 60px;
   }
   .event h2 {
@@ -104,5 +106,5 @@
   }
   .event p {
     font-size: 20px;
-  }
+  } */
 }

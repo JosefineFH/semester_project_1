@@ -4,32 +4,35 @@ const url = 'https://josefineholth.one/thesciencemuseum/wp-json/tribe/events/v1/
 const events = document.querySelector('.event')
 
 fetch(url)
-.then(response => response.json())
-.then(data => {
-    let postData = data.events;
-    console.log(postData)
-    postData.forEach(posts => {
-        let dateDay = posts.start_date_details.day;
-        let dateMonth = posts.start_date_details.month;
-        let dateYear = posts.start_date_details.year;
-        let postTitle = posts.title;
-        let image = posts.image.url;
-        let postId = posts.id
-        console.log(image)
+    .then(response => response.json())
+    .then(data => {
+        let eventData = data.events;
+        console.log(eventData)
+        eventData.forEach(event => {
+            let dateDay = event.start_date_details.day;
+            let dateMonth = event.start_date_details.month;
+            let dateYear = event.start_date_details.year;
+            let eventTitle = event.title;
+            let image = event.image.url;
+            let eventId = event.id
+            let eventDescription = event.excerpt;
+            console.log(image)
 
-        
-        events.innerHTML += `
-        <div id="professor_of_aeronautics">
-                    <p class="date">${dateDay}.${dateMonth}.${dateYear}</p>
-                    <h2>${postTitle}</h2>
-                    <div class="book_event">
-                        <p class="bold">Prize: ${posts.cost}</p>
-                        <a class="event_button" href="/specificEvents.html?id=${postId}">Read More</a>
-                    </div>
+
+            events.innerHTML += `
+        <div>
+            <div class="image_content">
+             <img src="${image}" alt="Space X rocket">
+            </div>
+            <div>
+                <p class="date">${dateDay}.${dateMonth}.${dateYear}</p>
+                <h2>${eventTitle}</h2>
+                <div class="description">${eventDescription}</div>
+                <div class="book_event">
+                    <p class="bold">Prize: ${event.cost}</p>
+                    <a class="event_button" href="/specificEvents.html?id=${eventId}">Read More</a>
                 </div>
-                <div class="image_content">
-                    <img src="${image}" alt="Space X rocket">
-                </div>
-            </div>`
-    });
-})
+            </div>
+        </div>`
+        });
+    })

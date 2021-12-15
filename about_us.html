@@ -13,9 +13,8 @@
     <link rel="icon" href="/assets/images/icons/atom.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/css/navbar.css" />
-    <link rel="stylesheet" href="/assets/css/footer.css" />
-    <link rel="stylesheet" href="/assets/css/events.css">
+    <link rel="stylesheet" href="/assets/css/aboutUs.css">
+    <link rel="stylesheet" href="/assets/css/components/form.css">
     <title>The Science Museum | Visit us or contact us</title>
 </head>
 
@@ -73,8 +72,8 @@
                         <p>Email: science.museum@mail.com</p>
                     </div>
                 </div>
-                <img class="map_image" src="/images/map.jpg" alt="">
             </div>
+            <img style="display: block; margin: auto; padding-top: 20px;" class="map_image" src="/assets/images/map.jpg" alt="map of where the science museum is located">
         </section>
 
         <section>
@@ -161,14 +160,15 @@
             <h2 class="orange_text">Contact us if you have eny questions</h2>
 
             <form action="about_us.html">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" />
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" />
 
                 <label for="email">Email:</label>
                 <input type="email" id="email"/>
 
-                <label for="options" >Select category for why you are contacting us:</label>
-                <select name="options" id="options">
+                <label for="events" >Select category for why you are contacting us:</label>
+                <select name="event" id="events">
+                    <option value="">Choose and option</option>
                     <option value="guided tour">About guided tours</option>
                     <option value="events">Events</option>
                     <option value="questions kids">Questions from kids</option>
@@ -179,9 +179,9 @@
                     <option value="Other question">Other questions</option>
                 </select>
 
-                <label for="message_us" >Your message to us:</label>
-                <textarea name="message_us" id="message_us" cols="30" rows="10"></textarea>
-
+                <label for="message" >Your message to us:</label>
+                <textarea name="message" id="message" placeholder="Tell us how many tickets you want. Becaus of the covid situation tell us the name of every participant"></textarea>
+                <div class="error_message"></div>
                 <input class="button" type="submit" value="send"> 
             </form>
         </section>
@@ -225,5 +225,6 @@
         </div>
     </footer>
 </body>
+<script src="/js/components/form.js"></script>
 
 </html>

@@ -44,6 +44,15 @@
 .center_content img {
 margin:20px;
 }
+.to_top{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.to_top a{
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
 @media only screen and (min-width: 768px) {
 
   .exhibition_image  {

@@ -214,23 +214,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* about_us.html */
-.visit_us {
-  max-width: 1000px;
-  display: block;
-  margin: 0 auto;
-}
-.visit_info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.vist_address {
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  margin: 30px;
-}
-
 .info p {
   color: var(--midnight-blue);
   padding: 0;
@@ -262,7 +245,7 @@ a:hover {
 
 /* get involved */
 .purple {
-  background: var(--wisteria);
+  background: var(--blue-river);
 }
 .purple p,
 .purple h2 {
